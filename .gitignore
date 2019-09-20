@@ -1,0 +1,6 @@
+Source/**/*
+Libs/LibStub/tests/test.lua
+Libs/LibStub/tests/test2.lua
+Libs/LibStub/tests/test3.lua
+Libs/LibStub/tests/test4.lua
+Libs/LibStub/Changelog-LibStub-1.0.2-70000.txt

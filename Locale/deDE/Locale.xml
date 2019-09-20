@@ -1,0 +1,9 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+  <!-- <Script file="Core.lua"/> -->
+  <!-- <Script file="Modules\PetAbilities.lua"/> -->
+  <!-- <Script file="Modules\PetInfo.lua"/> -->
+  <!-- <Script file="Modules\PlayerAbilities.lua"/> -->
+  <!-- <Script file="Modules\PlayerInfo.lua"/> -->
+
+</Ui>

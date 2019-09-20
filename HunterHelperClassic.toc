@@ -1,0 +1,32 @@
+## Interface: 11302
+## Title: HunterHelperClassic
+## Author: Nitrinax
+## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
+## Version: 0.0.0-5
+## RequiredDeps:
+## OptionalDeps:
+## SavedVariables: hhcAddonOptions
+## SavedVariablesPerCharacter: hhcAddonOptions
+## X-Category: Interface Enhancements
+## X-Website: https://github.com/Nitrinax/HunterHelperClassic
+## X-Github: https://github.com/Nitrinax/HunterHelperClassic
+## X-License: GPLv3
+
+embeds.xml
+
+# Defaults
+Data\Defaults.xml
+Data\Functions.xml
+Data\Modules.xml
+
+# Locale
+Locale\deDE\Locale.xml
+
+# Modules
+Modules\PetAbilities\Module.xml
+Modules\PetInfo\Module.xml
+Modules\PlayerAbilities\Module.xml
+Modules\PlayerInfo\Module.xml
+
+# Main
+HunterHelperClassic.lua
