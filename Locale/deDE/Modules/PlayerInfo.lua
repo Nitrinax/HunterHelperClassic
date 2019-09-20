@@ -1,4 +1,55 @@
-_HHCLocale.PlayerInfo['deDE'] = {
-    -- Config Windows
-    ['OPTIONS_TAB'] = "Einstellungen",
-};
+if GetLocale() == "deDE" then
+
+    _HHCLocale.PlayerInfo.PlayerSpells = {
+
+        "Arcane Shot", "Arkaner Schuss",        
+        "Aspect of the Beast", "Aspekt des Wildtiers",
+        "Aspect of the Cheetah", "Aspekt des Geparden",
+        "Aspect of the Hawk", "Aspekt des Falken",
+        "Aspect of the Monkey", "Aspekt des Affen",
+        "Aspect of the Pack", "Aspekt des Rudels",
+        "Aspect of the Wild", "Aspekt der Wildnis",
+        "Auto Shot", "Automatischer Schuss",
+        "Beast Lore", "Wildtierkunde",
+        "Call Pet", "Tier rufen",
+        "Concussive Shot", "Erschütternder Schuss",
+        "Disengage", "Rückzug",
+        "Dismiss Pet", "Tier freigeben",
+        "Distracting Shot", "Ablenkender Schuss",
+        "Eagle Eye", "Adlerauge",
+        "Explosive Trap", "Sprengfalle",
+        "Eyes of the Beast", "Augen des Wildtiers",
+        "Feed Pet", "Tier füttern",
+        "Feign Death", "Totstellen",
+        "Flare", "Leuchtfeuer",
+        "Freezing Trap", "Eiskältefalle",
+        "Frost Trap", "Frostfalle",
+        "Hunter's Mark", "Mal des Jägers",
+        "Immolation Trap", "Feuerbrandfalle",
+        "Mend Pet", "Tier heilen",
+        "Mongoose Bite", "Mungobiss",
+        "Multi-Shot", "Mehrfachschuss",
+        "Rapid Fire", "Schnellfeuer",
+        "Raptor Strike", "Raptorstoß",
+        "Readiness", "Bereitschaft",
+        "Revive Pet", "Tier wiederbeleben",
+        "Scare Beast", "Wildtier ängstigen",
+        "Scorpid Sting", "Skorpidstich",
+        "Serpent Sting", "Schlangenbiss",
+        "Tame Beast", "Wildtier zähmen",
+        "Track Beasts", "Wildtiere aufspüren",
+        "Track Demons", "Dämonen aufspüren",
+        "Track Dragonkin", "Drachkin aufspüren",
+        "Track Elementals", "Elementare aufspüren",
+        "Track Giants", "Riesen aufspüren",
+        "Track Hidden", "Verborgenes aufspüren",
+        "Track Humanoids", "Humanoide aufspüren",
+        "Track Undead", "Untote aufspüren",
+        "Tranquilizing Shot", "Einlullender Schuss",
+        "Viper Sting", "Vipernbiss",
+        "Volley", "Salve",
+        "Wing Clip", "Zurechtstutzen"
+
+    };
+
+end

@@ -1,12 +1,25 @@
 --init tables
-_HHC = {...};             --main
-_HHCData = {...};         --data
 
--- modules data
+-- main table
+_HHC = {...};
+
+-- data table
+_HHCData = {...};
+
+-- modules data table
 _HHCData.PetInfo = {};
 _HHCData.PlayerInfo = {};
 
-_HHCFunctions = {...};    --functions
-_HHCLocale = {...};       --data
-_HHCModule = {...};       --module
-_HHCOptions = {...};      --options
+-- functions table
+_HHCFunctions = {...};
+
+-- locale table
+_HHCLocale = {...};
+_HHCLocale.PetInfo = {};
+_HHCLocale.PlayerInfo = {};
+
+-- module table
+_HHCModule = {...};
+
+-- options table
+_HHCOptions = {...};
