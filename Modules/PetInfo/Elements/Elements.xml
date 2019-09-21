@@ -1,0 +1,18 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+    
+    <Script file="createExperiencePointsElement.lua"/>
+    <Script file="createFamiltyElement.lua"/>
+    <Script file="createFoodElement.lua"/>
+    <Script file="createHappinessElement.lua"/>
+    <Script file="createLevelElement.lua"/>
+    <Script file="createLoyaltyElement.lua"/>
+    <Script file="createNameElement.lua"/>
+    <Script file="createRoleElement.lua"/>
+    <Script file="createTrainingPointsElement.lua"/>
+    <!-- <Script file="XXXXX.lua"/> -->
+    <!-- <Script file="XXXXX.lua"/> -->
+    <!-- <Script file="XXXXX.lua"/> -->
+    <!-- <Script file="XXXXX.lua"/> -->
+    <!-- <Script file="XXXXX.lua"/> -->
+
+</Ui>

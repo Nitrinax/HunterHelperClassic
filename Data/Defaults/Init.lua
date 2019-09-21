@@ -19,7 +19,7 @@ _HHCLocale.PetInfo = {};
 _HHCLocale.PlayerInfo = {};
 
 -- module table
-_HHCModule = {...};
+_HHCModules = {...};
 
 -- options table
 _HHCOptions = {...};

@@ -1,8 +1,0 @@
-<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
-
-  <Script file="Defaults\Init.lua"/>
-  <Script file="Defaults\Options.lua"/>
-  <!-- <Script file="Defaults\XYZ.lua"/> -->
-  <!-- <Script file="Defaults\XYZ.lua"/> -->
-
-</Ui>

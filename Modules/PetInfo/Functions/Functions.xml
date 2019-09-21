@@ -1,0 +1,18 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+    
+    <Script file="createPetFrame.lua"/>
+    <Script file="GetExperiencePoints.lua"/>
+    <Script file="GetFamily.lua"/>
+    <Script file="GetFood.lua"/>
+    <Script file="GetHappiness.lua"/>
+    <Script file="GetLoyalty.lua"/>
+    <Script file="GetNameByID.lua"/>
+    <Script file="GetRole.lua"/>
+    <Script file="GetTameAbilities.lua"/>
+    <Script file="GetTrainerAbilities.lua"/>
+    <Script file="GetTrainerByID.lua"/>
+    <Script file="GetTrainerByLocation.lua"/>
+    <Script file="GetTrainingPoints.lua"/>
+    <!-- <Script file="XXXXX.lua"/> -->
+
+</Ui>

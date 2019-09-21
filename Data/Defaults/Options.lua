@@ -1,6 +1,6 @@
 _HHCOptions.Modules = {
     
-    "PetInfo", true,
-    "PlayerInfo", true
+    "PetInfo", false,
+    "PlayerInfo", false
 
 };

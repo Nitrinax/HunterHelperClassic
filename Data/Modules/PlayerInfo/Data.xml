@@ -1,6 +1,0 @@
-<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
-    
-    <Script file="PlayerDropAbilities.lua"/>
-    <Script file="PlayerTrainerAbilities.lua"/>
-
-</Ui>

@@ -1,0 +1,13 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+  <Include file="Locale\Locale.xml"/>
+  <Include file="Data\Data.xml"/>
+  <Include file="Elements\Elements.xml"/>
+  <Include file="Functions\Functions.xml"/>
+  <Include file="Options\Options.xml"/>
+  <Script file="Core.lua"/>
+  <!-- <Script file="ABC.lua"/> -->
+  <!-- <Script file="XYT.lua"/> -->
+  <!-- <Script file="123.lua"/> -->
+
+</Ui>
