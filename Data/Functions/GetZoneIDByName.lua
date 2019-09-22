@@ -1,19 +1,20 @@
-function _HHCFunctions:GetZoneIDByName(mapName)
+--return zone id from a given zone name
+function _HHCFunctions:GetZoneIDByName(zoneName)
 
-    local mapKey = nil;
+    local zoneID = nil;
 
     for key, value in pairs(_HHCData.Zones) do
 
         --print(key, value);
 
-        if value == mapName then
+        if value[1] == zoneName then
 
-            mapKey = key ;
+            zoneID = key;
 
         end
 
     end
 
-    return mapKey;
+    return zoneID;
 
 end
