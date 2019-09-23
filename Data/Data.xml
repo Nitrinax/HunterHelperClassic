@@ -1,0 +1,15 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+    <!-- Data Defaults -->
+    <Include file="Defaults\Defaults.xml"/>
+    <!-- Data Locale -->
+    <Include file="Locale\Locale.xml"/>
+    <!-- Data Functions -->
+    <Include file="Functions\Functions.xml"/>
+
+    <!-- Data -->
+    <Script file="Factions.lua"/>
+    <Script file="Zones.lua"/>
+    <Script file="ZoneTypes.lua"/>
+
+</Ui>

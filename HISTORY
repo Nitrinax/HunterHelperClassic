@@ -1,2 +1,16 @@
+0.0.0-12
+- add function GetLocaleString
+- add locale test
+
+0.0.0-11
+- add zone status to zone list
+- fix faction IDs
+- change function GetZoneIDByName for new zone list format
+- add zoneTypes table
+
+0.0.0-10
+- fix zone IDs
+- move including Data files from toc to Data.xml to include Data files
+
 0.0.0-9
--rewrote GetZoneIDByName, GetZoneNameByID, Zones
+- rewrote GetZoneIDByName, GetZoneNameByID, Zones

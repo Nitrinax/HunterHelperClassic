@@ -5,6 +5,7 @@ function _HHCFunctions:GetZoneNameByID(zoneID, recursive)
     --defaults
     local zoneName = "unknown";
     local zoneType = 0;
+    local zoneFaction = 0;
     local zoneLevelrangeFrom = 0;
     local zoneLevelrangeTo = 0;
     local zoneMaxPlayers = 0;
@@ -20,9 +21,10 @@ function _HHCFunctions:GetZoneNameByID(zoneID, recursive)
             if recursive == true then
 
                 zoneType = value[2];
-                zoneLevelrangeFrom = value[3];
-                zoneLevelrangeTo = value[4];
-                zoneMaxPlayers = value[5];
+                zoneFaction = value[3];
+                zoneLevelrangeFrom = value[4];
+                zoneLevelrangeTo = value[5];
+                zoneMaxPlayers = value[6];
 
             end
 
@@ -32,11 +34,11 @@ function _HHCFunctions:GetZoneNameByID(zoneID, recursive)
 
     if recursive == true then
 
-        return zoneName, zoneType, zoneLevelrangeFrom, zoneLevelrangeTo, zoneMaxPlayers;
+        return zoneName, zoneType, zoneFaction, zoneLevelrangeFrom, zoneLevelrangeTo, zoneMaxPlayers;
 
     else
 
-        return zoneName, 0, 0, 0, 0;
+        return zoneName;
 
     end
 

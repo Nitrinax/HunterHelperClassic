@@ -1,8 +1,10 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
+  <Script file="GetFactionNameByID.lua"/>
+  <Script file="GetFactionIDByName.lua"/>  
+  <Script file="GetLocaleString.lua"/>
   <Script file="GetZoneIDByName.lua"/>
   <Script file="GetZoneNameByID.lua"/>
-  <!-- <Script file="XYZ.lua"/> -->
-  <!-- <Script file="123.lua"/> -->
+  <Script file="GetZoneTypeNameByID.lua"/>
 
 </Ui>
