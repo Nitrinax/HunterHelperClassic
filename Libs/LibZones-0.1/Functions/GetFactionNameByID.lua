@@ -1,9 +1,9 @@
 --return (short) faction name from a given faction id
-function _HHCFunctions:GetFactionNameByID(factionID, short)
+function _LibZones:GetFactionNameByID(factionID, short)
 
     local factionName = nil;
 
-    for key, value in pairs(_HHCData.Factions) do
+    for key, value in pairs(_LibZonesData.Factions) do
 
         --print(key, value);
 

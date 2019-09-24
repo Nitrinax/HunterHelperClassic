@@ -1,5 +1,5 @@
 --return a local string from a given locale table and locale id
-function _HHCFunctions:GetLocaleString(localeTable, localeID)
+function _LibLocale:GetLocaleString(localeTable, localeID)
 
     local localeString = "unkown";
 

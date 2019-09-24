@@ -8,7 +8,7 @@
 	<Include file="Data\Data.xml"/>
 
     <!-- # Core  -->
-	<Script file="LibWidgets-0.1.lua"/>
+	<Script file="LibZones-0.1.lua"/>
 
     <!-- # Functions -->
 	<Include file="Functions\Functions.xml"/>

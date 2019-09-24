@@ -3,6 +3,9 @@
 -- main table
 _HHC = {...};
 
+-- defaults table
+_HHCDefaults = {};
+
 -- data table
 _HHCData = {...};
 

@@ -1,6 +1,6 @@
 -- return zone name from a given zone id
 -- if recursive true than also return type of zone, levelrange and max players for this zone
-function _HHCFunctions:GetZoneNameByID(zoneID, recursive)
+function _LibZones:GetZoneNameByID(zoneID, recursive)
 
     --defaults
     local zoneName = "unknown";
@@ -10,7 +10,7 @@ function _HHCFunctions:GetZoneNameByID(zoneID, recursive)
     local zoneLevelrangeTo = 0;
     local zoneMaxPlayers = 0;
 
-    for key, value in pairs(_HHCData.Zones) do
+    for key, value in pairs(_LibZonesData.Zones) do
 
         --print(key, value);
 

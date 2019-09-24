@@ -1,0 +1,21 @@
+-- main frame
+_HHCDefaults["HHC_DEFAULT_FRAME_PARENT"] = UIParent;
+_HHCDefaults["HHC_DEFAULT_FRAME_WIDTH"]  = 180;
+_HHCDefaults["HHC_DEFAULT_FRAME_HEIGHT"]  = 140;
+_HHCDefaults["HHC_DEFAULT_FRAME_POS"]  = "TOPLEFT";
+_HHCDefaults["HHC_DEFAULT_FRAME_LEFT_OFFSET"]  = 20;
+_HHCDefaults["HHC_DEFAULT_FRAME_TOP_OFFSET"]  = -140;
+_HHCDefaults["HHC_DEFAULT_FRAME_ALPHA"]  = 0.75;
+
+-- main frame backdrop
+_HHCDefaults["HHC_DEFAULT_FRAME_BGFILE"]  = "Interface\\Tooltips\\UI-Tooltip-Background";
+_HHCDefaults["HHC_DEFAULT_FRAME_TILE"]  = false;
+_HHCDefaults["HHC_DEFAULT_FRAME_TILESIZE"]  = 32;
+_HHCDefaults["HHC_DEFAULT_FRAME_EDGEFILE"]  = "Interface\\Tooltips\\UI-Tooltip-Border";
+_HHCDefaults["HHC_DEFAULT_FRAME_EDGESIZE"]  = 8;
+_HHCDefaults["HHC_DEFAULT_FRAME_INSET_LEFT"]  = 4;
+_HHCDefaults["HHC_DEFAULT_FRAME_INSET_TOP"]  = 4;
+_HHCDefaults["HHC_DEFAULT_FRAME_INSET_RIGHT"]  = 4;
+_HHCDefaults["HHC_DEFAULT_FRAME_INSET_BOTTOM"]  = 4;
+_HHCDefaults["HHC_DEFAULT_FRAME_BACKDROPCOLOR"]  = "0.1, 0.1, 0.1, 1";
+_HHCDefaults["HHC_DEFAULT_FRAME_BACKDROPBORDERCOLOR"]  = "0, 0, 0, 1";

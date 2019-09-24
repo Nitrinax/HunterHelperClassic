@@ -8,7 +8,7 @@
 --7 == Battleground
 --8 == Arena
 
-_HHCData.ZoneTypes = {
+_LibZonesData.ZoneTypes = {
 
     --typeID, typeName
     [1] = "Continent",

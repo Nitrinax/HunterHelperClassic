@@ -1,3 +1,1 @@
-local _, LibWidgets = ...;
-
-LIBWIDGETS_DEFAULT_SETALPHA_ALPHA = 0.75;
+_LibWidgetsDefaults["SETALPHA_ALPHA"] = 0.75;

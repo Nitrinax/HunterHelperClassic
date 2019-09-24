@@ -1,0 +1,15 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <!-- # Defaults -->
+	<Script file="Init.lua"/>
+
+	<Script file="createButton.lua"/>
+	<Script file="createFontstring.lua"/>
+	<Script file="createFrame.lua"/>
+	<Script file="setAlpha.lua"/>
+	<Script file="setBackdrop.lua"/>
+	<Script file="setPoint.lua"/>
+	<Script file="setText.lua"/>
+
+</Ui>

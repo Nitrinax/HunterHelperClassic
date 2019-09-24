@@ -2,7 +2,7 @@
 ## Title: HunterHelperClassic
 ## Author: Nitrinax
 ## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
-## Version: 0.0.0-12
+## Version: 0.0.0-13
 ## RequiredDeps:
 ## OptionalDeps:
 ## SavedVariables: hhcAddonOptions

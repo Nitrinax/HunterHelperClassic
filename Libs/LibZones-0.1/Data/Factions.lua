@@ -6,7 +6,7 @@
 --67 == Horde
 --3 == PvP
 
-_HHCData.Factions = {
+_LibZonesData.Factions = {
 
     --factionID, factionShort, factionLong
     [0] = { "C", "Contestet" },

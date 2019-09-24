@@ -1,0 +1,37 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <!-- # include widgets\uiobject -->
+
+    <!-- # widgets\uiobject -->
+	<Script file="widgets\uiobject\setAlpha.lua"/>
+
+    <!-- # widgets\uiobject region -->
+    <Script file="widgets\uiobject\region\setPoint.lua"/>
+
+    <!-- # widgets\uiobject\region\frame -->
+    <Script file="widgets\uiobject\region\frame\createFrame.lua"/>
+
+    <!-- # widgets region frame backdrop -->
+    <Script file="widgets\uiobject\region\frame\backdrop\setBackdrop.lua"/>
+    <Script file="widgets\uiobject\region\frame\backdrop\setBackdropColor.lua"/>
+    <Script file="widgets\uiobject\region\frame\backdrop\setBackdropBorderColor.lua"/>
+
+    <!-- # widgets region frame button -->
+    <Script file="widgets\uiobject\region\frame\button\createButton.lua"/>
+    <Script file=" widgets\uiobject\region\frame\button\createCheckButton.lua"/>
+
+    <!-- # widgets region frame editbox -->
+    <Script file="widgets\uiobject\region\frame\editbox\createEditBox.lua"/>
+
+    <!-- # widgets region frame slider -->
+    <Script file="widgets\uiobject\region\frame\slider\createSlider.lua"/>
+
+    <!-- # widgets region frame statusbar -->
+    <Script file="widgets\uiobject\region\frame\statusbar\createStatusBar.lua"/>
+
+    <!-- # widgets region layeredregion fontstring -->
+    <Script file="widgets\uiobject\region\layeredregion\fontstring\createFontString.lua"/>
+    <Script file="widgets\uiobject\region\layeredregion\fontstring\setText.lua"/>
+
+</Ui>

@@ -1,9 +1,9 @@
 --return zone id from a given zone name
-function _HHCFunctions:GetZoneIDByName(zoneName)
+function _LibZones:GetZoneIDByName(zoneName)
 
     local zoneID = nil;
 
-    for key, value in pairs(_HHCData.Zones) do
+    for key, value in pairs(_LibZonesData.Zones) do
 
         --print(key, value);
 

@@ -1,3 +1,8 @@
+0.0.0-13
+- move zone functions to LibZones
+- move locale functions to LibLocale
+- rework LibWidgets
+
 0.0.0-12
 - add function GetLocaleString
 - add locale test

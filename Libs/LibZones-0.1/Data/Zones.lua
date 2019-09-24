@@ -19,7 +19,7 @@
 --67 == Horde
 --3 == PvP
 
-_HHCData.Zones = {
+_LibZonesData.Zones = {
 
     --[ID] = { zoneName, zoneType, zoneFaction, zoneLevelrangeFrom, zoneLevelrangeTo, zoneMaxPlayers };
 

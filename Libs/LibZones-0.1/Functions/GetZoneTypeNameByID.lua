@@ -10,12 +10,12 @@
 --7 == Battleground
 --8 == Arena
 
-function _HHCFunctions:GetZoneTypeNameByID(zoneID)
+function _LibZones:GetZoneTypeNameByID(zoneID)
 
     --defaults
     local zoneTypeName = "unknown";
 
-    for key, value in pairs(_HHCData.ZoneTypes) do
+    for key, value in pairs(_LibZonesData.ZoneTypes) do
 
         --print(key, value);
 
