@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHCLocale.Core = {
+    _HHC.Locale.Core = {
 
         ["TEST"] = "Test",
         ["ABCDE"] = "abcde",

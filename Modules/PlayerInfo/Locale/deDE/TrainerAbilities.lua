@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHCLocale.PlayerInfo.TrainerAbilities = {
+    _HHC.Locale.PlayerInfo.TrainerAbilities = {
 
         ["ArcaneShot"] = "Arkaner Schuss",
         ["AspectoftheBeast"] = "Aspekt des Wildtiers",

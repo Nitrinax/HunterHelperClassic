@@ -2,7 +2,7 @@
 --https://classic.wowhead.com/spell-books/class:3
 --https://wowwiki.fandom.com/wiki/MapID
 
-_HHCData.PlayerInfo.DropAbilities = {
+_HHC.Data.PlayerInfo.DropAbilities = {
 
     --Level 60
     [60] = {

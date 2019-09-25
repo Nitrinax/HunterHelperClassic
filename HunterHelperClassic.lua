@@ -22,9 +22,14 @@
 
 -- locale
 
--- local myString = _LibLocale:GetLocaleString(_HHCLocale.Core, "VWXYZ");
+-- local myString = _LibLocale:GetLocaleString(_HHC.Locale.Core, "VWXYZ");
 -- print ("LocaleString: " .. myString);
 
 -- ## END TESTS ###
 
-_HHCFunctions:createMainFrame();
+_HHC.Frames.Main = _HHC.Functions:createMainFrame();
+
+_HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main);
+
+-- inheritFrame, modulesButtonState, optionsButtonState, closeButtonState, closeButtonTargetFrame
+_HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, true, true, _HHC.Frames.Main );

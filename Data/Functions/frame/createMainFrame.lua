@@ -1,41 +1,41 @@
-function _HHCFunctions:createMainFrame()
+function _HHC.Functions:createMainFrame()
 
     local hhcMainFrame;
 
     --frame
     hhcMainFrame = _LibWidgets:createFrame("Frame", 
-        _HHCDefaults["HHC_DEFAULT_FRAME_PARENT"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_WIDTH"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_HEIGHT"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_PARENT"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_WIDTH"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_HEIGHT"],
         true,
         true);
 
     --anchors
     _LibWidgets:setPoint(hhcMainFrame, 
-        _HHCDefaults["HHC_DEFAULT_FRAME_POS"], 
-        _HHCDefaults["HHC_DEFAULT_FRAME_LEFT_OFFSET"], 
-        _HHCDefaults["HHC_DEFAULT_FRAME_TOP_OFFSET"]);
+        _HHC.Defaults["HHC_DEFAULT_FRAME_POS"], 
+        _HHC.Defaults["HHC_DEFAULT_FRAME_LEFT_OFFSET"], 
+        _HHC.Defaults["HHC_DEFAULT_FRAME_TOP_OFFSET"]);
 
     --backdrop
     _LibWidgets:setBackdrop(hhcMainFrame,
-        _HHCDefaults["HHC_DEFAULT_FRAME_BGFILE"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_TILE"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_TILESIZE"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_EDGEFILE"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_EDGESIZE"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_INSET_LEFT"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_INSET_TOP"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_INSET_RIGHT"],
-        _HHCDefaults["HHC_DEFAULT_FRAME_INSET_BOTTOM"]);
+        _HHC.Textures["TEXTURE_DEFAULT_FRAME_BGFILE"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_TILE"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_TILESIZE"],
+        _HHC.Textures["TEXTURE_DEFAULT_FRAME_EDGEFILE"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_EDGESIZE"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_INSET_LEFT"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_INSET_TOP"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_INSET_RIGHT"],
+        _HHC.Defaults["HHC_DEFAULT_FRAME_INSET_BOTTOM"]);
 
     --backdrop color
-    _LibWidgets:setBackdropColor(hhcMainFrame, _HHCDefaults["HHC_DEFAULT_FRAME_BACKDROPCOLOR"]);
+    _LibWidgets:setBackdropColor(hhcMainFrame, _HHC.Defaults["HHC_DEFAULT_FRAME_BACKDROPCOLOR"]);
 
     --backdrop border color
-    _LibWidgets:setBackdropBorderColor(hhcMainFrame, _HHCDefaults["HHC_DEFAULT_FRAME_BACKDROPBORDERCOLOR"]);
+    _LibWidgets:setBackdropBorderColor(hhcMainFrame, _HHC.Defaults["HHC_DEFAULT_FRAME_BACKDROPBORDERCOLOR"]);
 
     --alpha
-    _LibWidgets:setAlpha(hhcMainFrame, _HHCDefaults["HHC_DEFAULT_FRAME_ALPHA"]);
+    _LibWidgets:setAlpha(hhcMainFrame, _HHC.Defaults["HHC_DEFAULT_FRAME_ALPHA"]);
 
     return hhcMainFrame;
 

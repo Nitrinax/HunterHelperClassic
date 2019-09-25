@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHCLocale.PlayerInfo.Core = {
+    _HHC.Locale.PlayerInfo.Core = {
 
         [1131] = "XXXXX",
         [1131] = "YYYYY",

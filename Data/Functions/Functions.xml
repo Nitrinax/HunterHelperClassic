@@ -1,6 +1,13 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
+  <Script file="spairs.lua"/>
+
   <Script file="frame\createMainFrame.lua"/>
+  <Script file="frame\createMainFrameTitle.lua"/>
+  <Script file="frame\createMainFrameTitleButtons.lua"/>
+
+  <Script file="button\createButton.lua"/>
+
   <!-- <Script file="XYZ.lua"/> --> 
   <!-- <Script file="123.lua"/> --> 
 

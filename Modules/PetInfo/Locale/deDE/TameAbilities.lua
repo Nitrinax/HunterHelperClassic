@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHCLocale.PetInfo.TameAbilities = {
+    _HHC.Locale.PetInfo.TameAbilities = {
 
         [1131] = "XXXXX",
         [1131] = "YYYYY",

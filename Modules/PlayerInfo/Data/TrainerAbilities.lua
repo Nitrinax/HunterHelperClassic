@@ -1,7 +1,7 @@
 
 --https://classic.wowhead.com/hunter-abilities#0+2+20
 
-_HHCData.PlayerInfo.PlayerTrainerAbilities = {
+_HHC.Data.PlayerInfo.PlayerTrainerAbilities = {
 
     --Level 1
     [1] = {

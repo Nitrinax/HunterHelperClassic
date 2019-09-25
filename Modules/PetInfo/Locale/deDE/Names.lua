@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHCLocale.PetInfo.Names = {
+    _HHC.Locale.PetInfo.Names = {
 
         [1131] = "Winterwolf",
         [2070] = "Mondpirscherwicht",

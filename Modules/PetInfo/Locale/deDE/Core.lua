@@ -1,7 +1,7 @@
 
 if GetLocale() == "deDE" then
 
-    _HHCLocale.PetInfo.Core = {
+    _HHC.Locale.PetInfo.Core = {
 
         [1131] = "XXXXX",
         [1131] = "YYYYY",
