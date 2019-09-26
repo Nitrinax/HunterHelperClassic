@@ -1,4 +1,4 @@
-function _HHC.Functions.PlayerInfo:createPlayerFrame(targetFrame)
+function _HHC.Modules.PlayerInfo.Functions:createPlayerFrame(targetFrame)
 
     local hhcPlayerFrame;
 

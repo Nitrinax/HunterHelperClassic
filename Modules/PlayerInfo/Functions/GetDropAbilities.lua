@@ -1,2 +1,2 @@
-function _HHC.Functions.PlayerInfo:GetDropAbilities()
+function _HHC.Modules.PlayerInfo.Functions:GetDropAbilities()
 end

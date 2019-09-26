@@ -13,6 +13,6 @@
 -- arg5 - arg9 
 --     Attribute score increases from leveling. Strength (5) / Agility (6) / Stamina (7) / Intellect (8) / Spirit (9). 
 
-function _HHC.Functions.PlayerInfo:GetPlayerLevel()
+function _HHC.Modules.PlayerInfo.Functions:GetPlayerLevel()
 
 end

@@ -8,6 +8,3 @@ _LibZonesDefaults = {};
 
 -- data table
 _LibZonesData = {};
-
--- silencing load message
-_LibZonesDefaults["SILENCE"] = true;

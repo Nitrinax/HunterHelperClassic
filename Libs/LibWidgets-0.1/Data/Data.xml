@@ -2,8 +2,5 @@
 ..\FrameXML\UI.xsd">
 
     <!-- # Data -->
-	<!-- <Script file="ABC.lua"/> -->
-    <!-- <Script file="XYZ.lua"/> -->
-    <!-- <Script file="123.lua"/> -->
 
 </Ui>

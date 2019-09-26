@@ -3,13 +3,15 @@
 
     <!-- # Defaults -->
 	<Script file="Init.lua"/>
+	<Script file="Defaults.lua"/>
 
 	<Script file="createButton.lua"/>
 	<Script file="createFontstring.lua"/>
 	<Script file="createFrame.lua"/>
+	<Script file="createStatusbar.lua"/>
 	<Script file="setAlpha.lua"/>
 	<Script file="setBackdrop.lua"/>
 	<Script file="setPoint.lua"/>
-	<Script file="setText.lua"/>
+	<Script file="setText.lua"/>	
 
 </Ui>

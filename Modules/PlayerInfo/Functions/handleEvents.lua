@@ -1,2 +1,2 @@
-function _HHC.Functions.PlayerInfo:handleEvents(targetFrame)
+function _HHC.Modules.PlayerInfo.Functions:handleEvents(targetFrame)
 end

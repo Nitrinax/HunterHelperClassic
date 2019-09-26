@@ -1,14 +1,21 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
     
+    <!-- frame -->
     <Script file="createPlayerFrame.lua"/>
 
+    <!-- elements -->
+    <Includes file="Elements\Elements.xml"/>
+
+    <!-- functions -->
     <Script file="GetDropAbilities.lua"/>
-    <Script file="GetTrainerAbilities.lua"/>
-
-    <Script file="GetTrainerIDByLocation.lua"/>
-    <Script file="GetTrainerLocationByID.lua"/>
-
     <Script file="GetPlayerLevel.lua"/>
+    <Script file="GetTrainerAbilities.lua"/>
+    <Script file="GetTrainerIDByLocation.lua"/>
+    <Script file="GetTrainerLocationByID.lua"/>    
+    <Script file="handleEvents.lua"/>
+    <Script file="registerEvents.lua"/>
+    <Script file="showLearnableAbilities.lua"/>
+
     <!-- <Script file="XXXXX.lua"/> -->
     <!-- <Script file="XXXXX.lua"/> -->
     <!-- <Script file="XXXXX.lua"/> -->

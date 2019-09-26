@@ -1,8 +1,9 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
   <Script file="Init.lua"/>
-  <Script file="Frames.lua"/>
-  <Script file="Options.lua"/>  
+  <Script file="Defaults.lua"/>
+  <Script file="Modules.lua"/>
+  <Script file="Frames.lua"/>  
   <Script file="Icons.lua"/>
   <Script file="Textures.lua"/>
   <Script file="Fonts.lua"/>

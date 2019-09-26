@@ -3,5 +3,6 @@
 
   <!-- Defaults -->
   <Script file="Init.lua"/>
+  <Script file="Defaults.lua"/>
 
 </Ui>

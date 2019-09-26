@@ -12,11 +12,11 @@ function _LibWidgets:createStatusBar(
     --frame
     local frame = CreateFrame("StatusBar", frameName, frameParent);
 
-    if not frameParent then frameParent = _LibWidgetsDefaults["CREATEFRAME_FRAMEPARENT"]; end
+    if not frameParent then frameParent = _LibWidgetsDefaults["CREATESTATUSBAR_FRAMEPARENT"]; end
 
     --size
-    if frameXSize then frame:SetWidth(frameXSize); else frame:SetWidth(_LibWidgetsDefaults["CREATEFRAME_FRAMEXSIZE"]); end
-    if frameYSize then frame:SetHeight(frameYSize); else frame:SetHeight(_LibWidgetsDefaults["CREATEFRAME_FRAMEYSIZE"]); end
+    if frameXSize then frame:SetWidth(frameXSize); else frame:SetWidth(_LibWidgetsDefaults["CREATESTATUSBAR_FRAMEXSIZE"]); end
+    if frameYSize then frame:SetHeight(frameYSize); else frame:SetHeight(_LibWidgetsDefaults["CREATESTATUSBAR_FRAMEYSIZE"]); end
 
     --level
     if toplevel == true then

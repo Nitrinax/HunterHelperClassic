@@ -1,7 +1,7 @@
 
 --https://de.classic.wowhead.com/hunter-pet-abilities#50+20
 
-_HHC.Data.PetInfo.TrainerAbilities = {
+_HHC.Modules.PetInfo.Data.TrainerAbilities = {
 
     --Level 1
     [1] = {

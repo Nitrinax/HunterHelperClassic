@@ -1,3 +1,14 @@
+0.0.0-16
+- rework module PetInfo
+- rework module PlayerInfo
+
+0.0.0-15
+- libs updated
+- add option settings for each module
+- change module loading from toc to xml file
+- move defaults from options.lua to defaults.lua
+- move module defaults from options.lua to modules.lua
+
 0.0.0-14
 - add table sort function (spairs) from stackoverflow
 - rework all tables definitions

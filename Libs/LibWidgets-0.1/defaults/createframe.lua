@@ -6,7 +6,6 @@ _LibWidgetsDefaults["CREATEFRAME_POS"] = "TOPLEFT";
 _LibWidgetsDefaults["CREATEFRAME_LEFT_OFFSET"] = 80;
 _LibWidgetsDefaults["CREATEFRAME_TOP_OFFSET"] = -80;
 _LibWidgetsDefaults["CREATEFRAME_ALPHA"] = 0.75;
-
 -- frame title
 _LibWidgetsDefaults["CREATEFRAME_TITLE_FRAMEXSIZE"] = 96;
 _LibWidgetsDefaults["CREATEFRAME_TITLE_FRAMEYSIZE"] = 32;

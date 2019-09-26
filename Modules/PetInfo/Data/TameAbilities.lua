@@ -1,7 +1,7 @@
 
 --https://classic.wowhead.com/hunter-pet-abilities#0+1+2+20
 
-_HHC.Data.PetInfo.TameAbilities = {
+_HHC.Modules.PetInfo.Data.TameAbilities = {
     
     -- Bite, Rank 1
     [7] = { 17253,

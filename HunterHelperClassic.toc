@@ -2,7 +2,7 @@
 ## Title: HunterHelperClassic
 ## Author: Nitrinax
 ## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
-## Version: 0.0.0-14
+## Version: 0.0.0-15
 ## RequiredDeps:
 ## OptionalDeps:
 ## SavedVariables: hhcAddonOptions
@@ -18,8 +18,7 @@ embeds.xml
 Data\Data.xml
 
 # Modules
-Modules\PetInfo\PetInfo.xml
-Modules\PlayerInfo\PlayerInfo.xml
+Modules\Modules.xml
 
 # Main
 HunterHelperClassic.lua

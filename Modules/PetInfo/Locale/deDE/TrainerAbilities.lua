@@ -1,6 +1,6 @@
 if GetLocale() == "deDE" then
 
-    _HHC.Locale.PetInfo.TrainerAbilities = {
+    _HHC.Modules.PetInfo.Locale.TrainerAbilities = {
 
         ["ArcaneResistance"] = "Arkanwiderstand",
         ["FireResistance"] = "Feuerwiderstand",

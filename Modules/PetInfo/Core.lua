@@ -1,34 +1,35 @@
--- module table
---_HHC.Modules.PetInfo = {};
+--check if the module disabled
+if not _HHC.Modules.PetInfo["DISABLED"] or 
+        _HHC.Modules.PetInfo["DISABLED"] == nil or 
+        _HHC.Modules.PetInfo["DISABLED"] == false then
 
--- module defaults table
---_HHC.Defaults.PetInfo = {};
+    --check if global silencing modules inactive
+    if not _HHC.Options["SILENCE_MODULES"] or
+            _HHC.Options["SILENCE_MODULES"] == nil or
+            _HHC.Options["SILENCE_MODULES"] == false then
 
--- module data table
---_HHC.Data.PetInfo = {};
+        --check if local silence module inactive
+        if not _HHC.Modules.PetInfo.Defaults["SILENCE"] or 
+                _HHC.Modules.PetInfo.Defaults["SILENCE"] == nil or
+                _HHC.Modules.PetInfo.Defaults["SILENCE"] == false then
 
--- module options table
---_HHC.Options.PetInfo = {};
+            --show loaded message
+            print ("Module " .. _HHC.Modules.PetInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PetInfo.Data["MODULE_VERSION"] .. ") loaded");
 
--- module locale table
---_HHC.Locale.PetInfo = {};
-
--- module functions table
---_HHC.Functions.PetInfo = {};
-
--- module name
-_HHC.Modules.PetInfo["MODULE_NAME"] = "PetInfo";
--- module version
-_HHC.Modules.PetInfo["MODULE_VERSION"] = "0.0.0-1";
-
-if _HHC.Modules.PetInfo["DISABLED"] == true then
-
-    if _HHC.Options.PetInfo["SILENCE"] == false then
-
-        print ("Module " .. _HHC.Modules.PetInfo["MODULE_NAME"] .. " (" .. _HHC.Modules.PetInfo["MODULE_VERSION"] .. ") is disabled");
+        end
 
     end
 
 else
+
+    --check if global silencing modules inactive
+    if not _HHC.Options["SILENCE_MODULES"] or 
+            _HHC.Options["SILENCE_MODULES"] == nil or
+            _HHC.Options["SILENCE_MODULES"] == false then
+
+        --show disable message
+        print ("Module " .. _HHC.Modules.PetInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PetInfo.Data["MODULE_VERSION"] .. ") is disabled");
+
+    end
 
 end

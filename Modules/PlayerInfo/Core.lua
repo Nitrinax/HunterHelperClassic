@@ -1,38 +1,35 @@
--- module table
---_HHC.Modules.PlayerInfo = {};
+--check if the module disabled
+if not _HHC.Modules.PlayerInfo["DISABLED"] or 
+        _HHC.Modules.PlayerInfo["DISABLED"] == nil or 
+        _HHC.Modules.PlayerInfo["DISABLED"] == false then
 
--- module defaults table
---_HHC.Defaults.PlayerInfo = {};
+    --check if global silencing modules inactive
+    if not _HHC.Options["SILENCE_MODULES"] or
+            _HHC.Options["SILENCE_MODULES"] == nil or
+            _HHC.Options["SILENCE_MODULES"] == false then
 
--- module data table
---_HHC.Data.PlayerInfo = {};
+        --check if local silence module inactive
+        if not _HHC.Modules.PlayerInfo.Defaults["SILENCE"] or 
+                _HHC.Modules.PlayerInfo.Defaults["SILENCE"] == nil or
+                _HHC.Modules.PlayerInfo.Defaults["SILENCE"] == false then
 
--- module options table
---_HHC.Options.PlayerInfo = {};
+            --show loaded message
+            print ("Module " .. _HHC.Modules.PlayerInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PlayerInfo.Data["MODULE_VERSION"] .. ") loaded");
 
--- module locale table
---_HHC.Locale.PlayerInfo = {};
-
--- module functions table
---_HHC.Functions.PlayerInfo = {};
-
--- module name
-_HHC.Modules.PlayerInfo["MODULE_NAME"] = "PlayerInfo";
--- module version
-_HHC.Modules.PlayerInfo["MODULE_VERSION"] = "0.0.0-1";
-
-if _HHC.Modules.PlayerInfo["DISABLED"] == true then
-
-    if _HHC.Options.PetInfo["SILENCE"] == false then
-
-        print ("Module " .. _HHC.Modules.PlayerInfo["MODULE_NAME"] .. " (" .. _HHC.Modules.PlayerInfo["MODULE_VERSION"] .. ") is disabled");
+        end
 
     end
 
-else  
+else
 
-    --_HHC.Functions.PlayerInfo:showLearnableAbilities();
+    --check if global silencing modules inactive
+    if not _HHC.Options["SILENCE_MODULES"] or 
+            _HHC.Options["SILENCE_MODULES"] == nil or
+            _HHC.Options["SILENCE_MODULES"] == false then
 
-    _HHC.Frames.PlayerInfo = _HHC.Functions.PlayerInfo:createPlayerFrame(_HHC.Frames.Main);
+        --show disable message
+        print ("Module " .. _HHC.Modules.PlayerInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PlayerInfo.Data["MODULE_VERSION"] .. ") is disabled");
+
+    end
 
 end

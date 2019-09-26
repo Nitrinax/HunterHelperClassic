@@ -1,6 +1,6 @@
 --[[
 Name: LibZones-0.1
-Revision: $Revision: 2$
+Revision: $Revision: 3$
 Author: Nitrinax
 Website: https://github.com/Nitrinax/LibZone
 Description: provide simplifyied zone functions
@@ -8,7 +8,7 @@ Dependencies: LibStub
 License: GPL v3
 ]]
 
-local MAJOR, MINOR = "LibZones-0.1", 2;
+local MAJOR, MINOR = "LibZones-0.1", 3;
 
 if not LibStub then error(MAJOR .. " requires LibStub."); end
 

@@ -1,2 +1,2 @@
-function _HHC.Functions.PlayerInfo:GetTrainerLocationByID()
+function _HHC.Modules.PlayerInfo.Functions:GetTrainerLocationByID()
 end

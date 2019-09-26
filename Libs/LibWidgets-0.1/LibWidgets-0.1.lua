@@ -1,6 +1,6 @@
 --[[
 Name: LibWidgets-0.1
-Revision: $Revision: 4$
+Revision: $Revision: 5$
 Author: Nitrinax
 Website: https://github.com/Nitrinax/LibWidgets
 Description: provide simplifyied widget functions
@@ -8,7 +8,7 @@ Dependencies: LibStub
 License: GPL v3
 ]]
 
-local MAJOR, MINOR = "LibWidgets-0.1", 4;
+local MAJOR, MINOR = "LibWidgets-0.1", 5;
 
 if not LibStub then error(MAJOR .. " requires LibStub."); end
 

@@ -1,6 +1,6 @@
 --[[
 Name: LibLocale-0.1
-Revision: $Revision: 1$
+Revision: $Revision: 2$
 Author: Nitrinax
 Website: https://github.com/Nitrinax/LibLocale
 Description: provide simplifyied locale functions
@@ -8,7 +8,7 @@ Dependencies: LibStub
 License: GPL v3
 ]]
 
-local MAJOR, MINOR = "LibLocale-0.1", 1;
+local MAJOR, MINOR = "LibLocale-0.1", 2;
 
 if not LibStub then error(MAJOR .. " requires LibStub."); end
 
