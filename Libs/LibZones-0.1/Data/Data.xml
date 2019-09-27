@@ -3,6 +3,7 @@
 
     <!-- # Data -->
 	<Script file="Factions.lua"/>
+    <Script file="NPCFactions.lua"/>
     <Script file="Zones.lua"/>
     <Script file="ZoneTypes.lua"/>
 

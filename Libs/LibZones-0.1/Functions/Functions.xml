@@ -4,6 +4,8 @@
     <!-- # Functions -->
 	<Script file="GetFactionIDByName.lua"/>
     <Script file="GetFactionNameByID.lua"/>
+    <Script file="GetNPCFactionIDByName.lua"/>
+    <Script file="GetNPCFactionNameByID.lua"/>
     <Script file="GetZoneIDByName.lua"/>
     <Script file="GetZoneNameByID.lua"/>
     <Script file="GetZoneTypeNameByID.lua"/>
