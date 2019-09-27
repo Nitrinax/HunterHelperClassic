@@ -9,4 +9,4 @@ _LibWidgetsDefaults["CREATEBUTTON_OPTION_HIGHLIGHT_TEXTURE"] = "Interface\\Butto
 --button
 _LibWidgetsDefaults["CREATEBUTTON_TEMPLATE"] = nil;
 _LibWidgetsDefaults["CREATEBUTTON_TEXTURE"] = nil;
-_LibWidgetsDefaults["CREATEBUTTON_TOOLTIP_ANCHOR"] = "ANCHOR_CURSOR";
+_LibWidgetsDefaults["CREATEBUTTON_TOOLTIP_ANCHOR"] = "ANCHOR_CURSOR_RIGHT";
