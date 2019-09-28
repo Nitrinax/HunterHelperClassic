@@ -1,5 +1,5 @@
 -- module table
-_HHC.Modules.PetInfo = {...};
+_HHC.Modules.PetInfo = {};
 
 -- module defaults table
 _HHC.Modules.PetInfo.Defaults = {};
@@ -18,5 +18,5 @@ _HHC.Modules.PetInfo.Locale = {};
 _HHC.Modules.PetInfo.Locale.Elements = {};
 
 -- module functions table
-_HHC.Modules.PetInfo.Functions = {};
-_HHC.Modules.PetInfo.Functions.Elements = {};
+_HHC.Modules.PetInfo.Functions = {...};
+_HHC.Modules.PetInfo.Functions.Elements = {...};

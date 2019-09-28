@@ -1,30 +1,29 @@
 --init tables
 
 -- main table
-_HHC = {...};
+_HHC = {};
 _HHC.Icons = {};
 _HHC.Textures = {};
 _HHC.Fonts = {};
 
 -- module table
-_HHC.Modules = {...};
-_HHC.Modules.PetInfo = {};
-_HHC.Modules.PlayerInfo = {};
+_HHC.Modules = {};
+_HHC.Modules.State = {};
 
 -- defaults table
 _HHC.Defaults = {};
 
 -- data table
-_HHC.Data = {...};
+_HHC.Data = {};
 
 -- options table
-_HHC.Options = {...};
+_HHC.Options = {};
 
 -- locale table
-_HHC.Locale = {...};
+_HHC.Locale = {};
 
 -- functions table
-_HHC.Functions = {...};
+_HHC.Functions = {};
 
 -- frame table
-_HHC.Frames = {...};
+_HHC.Frames = {};

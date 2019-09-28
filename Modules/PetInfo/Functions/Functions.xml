@@ -4,7 +4,7 @@
     <Script file="createPetFrame.lua"/>
 
     <!-- elements -->
-    <Includes file="Elements\Elements.xml"/>
+    <Include file="Elements\Elements.xml"/>
 
     <!-- functions -->
     <Script file="GetExperiencePoints.lua"/>

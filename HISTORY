@@ -1,3 +1,16 @@
+0.0.0-19
+- change the default state for SILENCE_MODULES to true
+- rearrange the file Data\Defaults\Defaults.xml
+- overhauled file Data\Defaults\Init.lua
+- overhauled file Data\Defaults\Modules.lua
+- add code to file HunterHelperClassic.lua to load the moduel PetInfo
+- rework module PetInfo\Core.lua
+- add more default values to module PetInfo
+- add code to function createPetFrame in module PetInfo
+- add code to element createNameElement in module PetInfo
+- add code to element createExpieriencePointsElement in module PetInfo
+- fix a bug in Module\PetInfo\Functions\Functions.xml that prevent the module to load its element functions
+
 0.0.0-18
 - add hunter trainer and pet trainer locations
 - add npcfactions to libzones

@@ -33,3 +33,10 @@ _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main);
 
 -- inheritFrame, modulesButtonState, optionsButtonState, closeButtonState, closeButtonTargetFrame
 _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, true, true, _HHC.Frames.Main );
+
+--if _HHC.Modules.PetInfo["DISABLED"] == false then
+if _HHC.Modules.State["PetInfo"] == true then
+
+    _HHC.Modules.PetInfo.Functions:Display(_HHC.Frames.Main);
+
+end

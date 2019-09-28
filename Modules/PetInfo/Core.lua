@@ -1,7 +1,17 @@
 --check if the module disabled
-if not _HHC.Modules.PetInfo["DISABLED"] or 
-        _HHC.Modules.PetInfo["DISABLED"] == nil or 
-        _HHC.Modules.PetInfo["DISABLED"] == false then
+if _HHC.Modules.State["PetInfo"] == false then
+
+    --check if global silencing modules inactive
+    if not _HHC.Options["SILENCE_MODULES"] or 
+            _HHC.Options["SILENCE_MODULES"] == nil or
+            _HHC.Options["SILENCE_MODULES"] == false then
+
+        --show disable message
+        print ("Module " .. _HHC.Modules.PetInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PetInfo.Data["MODULE_VERSION"] .. ") is disabled");
+
+    end
+
+else
 
     --check if global silencing modules inactive
     if not _HHC.Options["SILENCE_MODULES"] or
@@ -20,16 +30,23 @@ if not _HHC.Modules.PetInfo["DISABLED"] or
 
     end
 
-else
+end
 
-    --check if global silencing modules inactive
-    if not _HHC.Options["SILENCE_MODULES"] or 
-            _HHC.Options["SILENCE_MODULES"] == nil or
-            _HHC.Options["SILENCE_MODULES"] == false then
+function _HHC.Modules.PetInfo.Functions:Display(frame)
 
-        --show disable message
-        print ("Module " .. _HHC.Modules.PetInfo.Data["MODULE_NAME"] .. " (" .. _HHC.Modules.PetInfo.Data["MODULE_VERSION"] .. ") is disabled");
+    frame.pet = _HHC.Modules.PetInfo.Functions:createPetFrame(frame);
+    
+    if _HHC.Modules.PetInfo.Defaults.Elements["NAME_ELEMENT"] == true then
 
+        local unitName = GetUnitName("pet", false);
+
+        frame.pet.text = _HHC.Modules.PetInfo.Functions.Elements:createNameElement(frame.pet);
+
+        _LibWidgets:setText(frame.pet.text, unitName);
+
+    end
+
+    if _HHC.Modules.PetInfo.Defaults.Elements["EXPERIENCEPOINTS_ELEMENT"] == true then
     end
 
 end
