@@ -1,8 +1,9 @@
 ## Interface: 11302
 ## Title: HunterHelperClassic
+## X-Short-Title: HHC
 ## Author: Nitrinax
 ## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
-## Version: 0.0.0-19
+## Version: 0.0.0-20
 ## RequiredDeps:
 ## OptionalDeps:
 ## SavedVariables: hhcAddonOptions

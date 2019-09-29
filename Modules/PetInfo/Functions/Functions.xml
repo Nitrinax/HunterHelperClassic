@@ -7,21 +7,26 @@
     <Include file="Elements\Elements.xml"/>
 
     <!-- functions -->
-    <Script file="GetExperiencePoints.lua"/>
-    <Script file="GetFamily.lua"/>
-    <Script file="GetFood.lua"/>
-    <Script file="GetHappiness.lua"/>
-    <Script file="GetLoyalty.lua"/>
-    <Script file="GetNameByID.lua"/>
-    <Script file="GetRole.lua"/>
-    <Script file="GetTameAbilities.lua"/>
-    <Script file="GetTrainerAbilities.lua"/>
-    <Script file="GetTrainerByID.lua"/>
-    <Script file="GetTrainerByLocation.lua"/>
-    <Script file="GetTrainingPoints.lua"/>
-    <Script file="handleEvents.lua"/>
-    <Script file="registerEvents.lua"/>
-    <Script file="showLearnableAbilities.lua"/>
+    <Script file="checkIfPetSummoned.lua"/>
+    <Script file="checkPetSameLevelAsPlayer.lua"/>
+    <Script file="checkUnitMaxLevel.lua"/>
+    <Script file="updatePetXPBar.lua"/>
+
+    <!-- <Script file="GetExperiencePoints.lua"/> -->
+    <!-- <Script file="GetFamily.lua"/> -->
+    <!-- <Script file="GetFood.lua"/> -->
+    <!-- <Script file="GetHappiness.lua"/> -->
+    <!-- <Script file="GetLoyalty.lua"/> -->
+    <!-- <Script file="GetNameByID.lua"/> -->
+    <!-- <Script file="GetRole.lua"/> -->
+    <!-- <Script file="GetTameAbilities.lua"/> -->
+    <!-- <Script file="GetTrainerAbilities.lua"/> -->
+    <!-- <Script file="GetTrainerByID.lua"/> -->
+    <!-- <Script file="GetTrainerByLocation.lua"/> -->
+    <!-- <Script file="GetTrainingPoints.lua"/> -->
+    <!-- <Script file="handleEvents.lua"/> -->
+    <!-- <Script file="registerEvents.lua"/> -->
+    <!-- <Script file="showLearnableAbilities.lua"/> -->
 
     <!-- <Script file="XXXXX.lua"/> -->
 

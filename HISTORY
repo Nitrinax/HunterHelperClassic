@@ -1,3 +1,20 @@
+0.0.0-20
+- add default option für silence addon messages
+- show addon loading message
+- remove test part from HunterHelperClassic.lua
+- add code to file Modules\PetInfo\Core.lua to load the experience points element
+- add default values to file Modules\PetInfo\Defaults\Defaults.lua for experience points element
+- rework experience points element
+- add short title to HunterHelperClassic.toc
+- show short title as addon title
+- show "no pet summoned" as pet name if no pet summoned
+- show "0/0 XP" as pet experience if no pet summoned
+- change default string for not defined locale string from "unkown" to "locale string not defined"
+- add functions checkIfPetSummoned, checkPetSameLevelAsPlayer, checkUnitMaxLevel, updatePetXPBar to module PetInfo
+- register event PLAYER_LEVEL_UP to main frame
+- add defaults for max level
+- add code to refresh player level on level up
+
 0.0.0-19
 - change the default state for SILENCE_MODULES to true
 - rearrange the file Data\Defaults\Defaults.xml

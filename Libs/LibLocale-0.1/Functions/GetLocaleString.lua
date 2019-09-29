@@ -1,7 +1,7 @@
 --return a local string from a given locale table and locale id
 function _LibLocale:GetLocaleString(localeTable, localeID)
 
-    local localeString = "unkown";
+    local localeString = "locale string not defined";
 
     for key, value in pairs(localeTable) do
 

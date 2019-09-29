@@ -1,5 +1,5 @@
 --elements
-_HHC.Modules.PetInfo.Defaults.Elements["EXPERIENCEPOINTS_ELEMENT"] = false;
+_HHC.Modules.PetInfo.Defaults.Elements["EXPERIENCEPOINTS_ELEMENT"] = true;
 _HHC.Modules.PetInfo.Defaults.Elements["FAMILTY_ELEMENT"] = false;
 _HHC.Modules.PetInfo.Defaults.Elements["FOOD_ELEMENT"] = false;
 _HHC.Modules.PetInfo.Defaults.Elements["HAPPINESS_ELEMENT"] = false;

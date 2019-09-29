@@ -1,27 +1,32 @@
-function _HHC.Modules.PetInfo.Functions:createExperiencePointsElement(targetFrame)
-   
-    local currXP, nextXP = GetPetExperience();
+function _HHC.Modules.PetInfo.Functions:createExperiencePointsElement(frame)
 
-    --targetFrame.statusbar = CreateFrame("StatusBar", nil, frame);
-    targetFrame.statusbar = LibWidgets:createStatusBar("StatusBar", frame, 100, 40, true);
+    frame.statusbar = _LibWidgets:createStatusBar("StatusBar", frame, 
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_WIDTH"],
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_HEIGHT"],
+        true
+    );
 
-    _LibWidgets:setPoint(targetFrame.statusbar, "TOPLEFT", ofx, ofy);
+    _LibWidgets:setPoint(frame.statusbar, "TOPLEFT",
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_LEFT_OFFSET"],
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_TOP_OFFSET"]
+    );
 
-    targetFrame.statusbar:SetSize(160, 20);
-    targetFrame.statusbar:SetStatusBarTexture("Interface\\Tooltips\\UI-Tooltip-Background");
-    targetFrame.statusbar:SetStatusBarColor(0, 1, 0);
-    targetFrame.statusbar:SetMinMaxValues(0, nextXP);
-    targetFrame.statusbar:SetValue(currXP);
+    frame.statusbar:SetStatusBarTexture(_HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_TEXTURE"]);
+    frame.statusbar:SetStatusBarColor(0, 1, 0);
+    frame.statusbar:SetMinMaxValues(0, 0);
+    frame.statusbar:SetValue(0);
     
-    targetFrame.statusbar.bg = targetFrame.statusbar:CreateTexture(nil, "BACKGROUND");
-    targetFrame.statusbar.bg:SetTexture("Interface\\Tooltips\\UI-Tooltip-Background");
-    targetFrame.statusbar.bg:SetAllPoints();
-    targetFrame.statusbar.bg:SetVertexColor(1, 0, 0);
+    frame.statusbar.bg = frame.statusbar:CreateTexture(nil, "BACKGROUND");
+    frame.statusbar.bg:SetTexture(_HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_BACKGROUND_TEXTURE"]);
+    frame.statusbar.bg:SetAllPoints();
+    frame.statusbar.bg:SetVertexColor(1, 0, 0);
 
-    targetFrame.statusbar.value = _LibWidgets:createFontString(frame.statusbar, OVERLAY, nil, HHC_DEFAULT_FRAME_PET_FONT);
-    
-    _LibWidgets:setPoint(targetFrame.statusbar.value, "CENTER", 0, 0);
+    frame.statusbar.value = _LibWidgets:createFontString(frame.statusbar, OVERLAY, nil,
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_VALUE_FONT"]);
 
-    _LibWidgets:setText(targetFrame.statusbar.value, currXP .. " / " .. nextXP .. " XP");
+    _LibWidgets:setPoint(frame.statusbar.value,
+        _HHC.Modules.PetInfo.Defaults.Elements["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_VALUE_ANCHOR"], 0, 0);
+
+    return frame.statusbar;
 
 end
