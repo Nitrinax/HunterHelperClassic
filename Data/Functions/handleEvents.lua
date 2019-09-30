@@ -8,8 +8,8 @@ function _HHC.Functions:handleEvents(frame)
             -- get event args
             local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 = ...
 
-            print ("old level " .. _HHC.Data.RealPlayerLevel);
-            print ("new level " .. arg1);
+            print ("HHCDEBUG: old level " .. _HHC.Data.RealPlayerLevel);
+            print ("HHCDEBUG: new level " .. arg1);
 
             -- set _HHC.Data.RealPlayerLevel to real/new level of player
             _HHC.Data.RealPlayerLevel = arg1;

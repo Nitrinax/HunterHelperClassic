@@ -20,3 +20,6 @@ _HHC.Modules.PetInfo.Locale.Elements = {};
 -- module functions table
 _HHC.Modules.PetInfo.Functions = {...};
 _HHC.Modules.PetInfo.Functions.Elements = {...};
+
+-- module events table
+_HHC.Events.Modules.PetInfo = {};

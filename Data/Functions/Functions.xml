@@ -4,6 +4,7 @@
   <Script file="spairs.lua"/>
   <Script file="handleEvents.lua"/>
   <Script file="registerEvents.lua"/>
+  <Script file="checkTwiceEvents.lua"/>
 
   <!-- frame functions --> 
   <Script file="frame\createMainFrame.lua"/>

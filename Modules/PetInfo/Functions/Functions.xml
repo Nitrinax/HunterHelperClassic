@@ -3,6 +3,10 @@
     <!-- frame -->
     <Script file="createPetFrame.lua"/>
 
+    <!-- events -->
+    <Script file="registerEvents.lua"/>
+    <Script file="handleEvents.lua"/>
+
     <!-- elements -->
     <Include file="Elements\Elements.xml"/>
 

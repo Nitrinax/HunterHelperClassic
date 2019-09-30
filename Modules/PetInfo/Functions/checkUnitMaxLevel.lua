@@ -1,6 +1,7 @@
 function _HHC.Modules.PetInfo.Functions:checkUnitMaxLevel(unit)
 
     local unitLevel = 1;
+
     local maxLevel = _HHC.Data.MaxAddonLevel;
 
     if unit == "player" then

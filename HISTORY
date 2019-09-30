@@ -1,79 +1,85 @@
+0.0.0-21
+- added registerEvents, handleEvents to Modules\PetInfo
+- added events table to addon
+- added events table to modules
+- added function checkTwiceEvents to check if a event triggerd twice or more times
+
 0.0.0-20
-- add default option für silence addon messages
-- show addon loading message
-- remove test part from HunterHelperClassic.lua
-- add code to file Modules\PetInfo\Core.lua to load the experience points element
-- add default values to file Modules\PetInfo\Defaults\Defaults.lua for experience points element
-- rework experience points element
-- add short title to HunterHelperClassic.toc
-- show short title as addon title
-- show "no pet summoned" as pet name if no pet summoned
-- show "0/0 XP" as pet experience if no pet summoned
-- change default string for not defined locale string from "unkown" to "locale string not defined"
-- add functions checkIfPetSummoned, checkPetSameLevelAsPlayer, checkUnitMaxLevel, updatePetXPBar to module PetInfo
-- register event PLAYER_LEVEL_UP to main frame
-- add defaults for max level
-- add code to refresh player level on level up
+- added default option für silence addon messages
+- changed text to show addon loading message
+- removed test part from HunterHelperClassic.lua
+- added code to file Modules\PetInfo\Core.lua to load the experience points element
+- added default values to file Modules\PetInfo\Defaults\Defaults.lua for experience points element
+- reworked experience points element
+- added short title to HunterHelperClassic.toc
+- changed title to show short title as addon title
+- changed text to show "no pet summoned" as pet name if no pet summoned
+- changed text to show "0/0 XP" as pet experience if no pet summoned
+- changed default string for not defined locale string from "unkown" to "locale string not defined"
+- added functions checkIfPetSummoned, checkPetSameLevelAsPlayer, checkUnitMaxLevel, updatePetXPBar to module PetInfo
+- registered event PLAYER_LEVEL_UP to main frame
+- added defaults for max level
+- added code to refresh player level on level up
 
 0.0.0-19
-- change the default state for SILENCE_MODULES to true
-- rearrange the file Data\Defaults\Defaults.xml
+- changed the default state for SILENCE_MODULES to true
+- rearranged the file Data\Defaults\Defaults.xml
 - overhauled file Data\Defaults\Init.lua
 - overhauled file Data\Defaults\Modules.lua
-- add code to file HunterHelperClassic.lua to load the moduel PetInfo
-- rework module PetInfo\Core.lua
-- add more default values to module PetInfo
-- add code to function createPetFrame in module PetInfo
-- add code to element createNameElement in module PetInfo
-- add code to element createExpieriencePointsElement in module PetInfo
-- fix a bug in Module\PetInfo\Functions\Functions.xml that prevent the module to load its element functions
+- added code to file HunterHelperClassic.lua to load the moduel PetInfo
+- reworked module PetInfo\Core.lua
+- added more default values to module PetInfo
+- added code to function createPetFrame in module PetInfo
+- added code to element createNameElement in module PetInfo
+- added code to element createExpieriencePointsElement in module PetInfo
+- fixed a bug in Module\PetInfo\Functions\Functions.xml that prevent the module to load its element functions
 
 0.0.0-18
-- add hunter trainer and pet trainer locations
-- add npcfactions to libzones
-- add functions GetNPCFactionIDByName, GetNPCFactionNameByID to libZones
+- added hunter trainer and pet trainer locations
+- added npcfactions to libzones
+- added functions GetNPCFactionIDByName, GetNPCFactionNameByID to libZones
 
 0.0.0-17
-- change main button textures
-- rework function createMainFrameTitleButtons
-- add tooltip strings for the buttons to language deDE
-- change the default anchor point for button tooltips in LibWidgets
-- add missing elements.xml file to module PlayerInfo
+- changed main button textures
+- reworked function createMainFrameTitleButtons
+- added tooltip strings for the buttons to language deDE
+- changed the default anchor point for button tooltips in LibWidgets
+- added missing elements.xml file to module PlayerInfo
 
 0.0.0-16
-- rework module PetInfo
-- rework module PlayerInfo
+- reworked module PetInfo
+- reworked module PlayerInfo
 
 0.0.0-15
 - libs updated
-- add option settings for each module
-- change module loading from toc to xml file
-- move defaults from options.lua to defaults.lua
-- move module defaults from options.lua to modules.lua
+- added option settings for each module
+- changed module loading from toc to xml file
+- moved defaults from options.lua to defaults.lua
+- moved module defaults from options.lua to modules.lua
 
 0.0.0-14
-- add table sort function (spairs) from stackoverflow
-- rework all tables definitions
-- add defaults fonts, textures, icons definitions
+- added table sort function (spairs) from stackoverflow
+- reworked all tables definitions
+- added defaults fonts, textures, icons definitions
 
 0.0.0-13
-- move zone functions to LibZones
-- move locale functions to LibLocale
-- rework LibWidgets
+- moved zone functions to LibZones
+- moved locale functions to LibLocale
+- reworked LibWidgets
 
 0.0.0-12
-- add function GetLocaleString
-- add locale test
+- added function GetLocaleString
+- added locale test
 
 0.0.0-11
-- add zone status to zone list
-- fix faction IDs
-- change function GetZoneIDByName for new zone list format
-- add zoneTypes table
+- added zone status to zone list
+- fixed faction IDs
+- changed function GetZoneIDByName for new zone list format
+- added zoneTypes table
 
 0.0.0-10
-- fix zone IDs
-- move including Data files from toc to Data.xml to include Data files
+- fixed zone IDs
+- moved including Data files from toc to Data.xml to include Data files
 
 0.0.0-9
-- rewrote GetZoneIDByName, GetZoneNameByID, Zones
+- rewroted GetZoneIDByName, GetZoneNameByID, Zones

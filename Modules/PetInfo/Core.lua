@@ -34,7 +34,11 @@ end
 
 function _HHC.Modules.PetInfo.Functions:Display(frame)
 
-    frame.pet = _HHC.Modules.PetInfo.Functions:createPetFrame(frame);
+    frame.pet = _HHC.Modules.PetInfo.Functions:createPetFrame(frame);    
+
+    _HHC.Modules.PetInfo.Functions:registerEvents(frame.pet);
+
+    _HHC.Modules.PetInfo.Functions:handleEvents(frame.pet);
 
     if _HHC.Modules.PetInfo.Defaults.Elements["NAME_ELEMENT"] == true then
 

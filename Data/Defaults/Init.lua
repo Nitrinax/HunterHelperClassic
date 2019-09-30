@@ -27,3 +27,7 @@ _HHC.Functions = {};
 
 -- frame table
 _HHC.Frames = {};
+
+-- frame events
+_HHC.Events = {};
+_HHC.Events.Modules = {};
