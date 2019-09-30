@@ -2,11 +2,11 @@ if GetLocale() == "deDE" then
 
     _HHC.Locale.Core = {
 
-        --["TEST"] = "Test",
-        --["ABCDE"] = "abcde",
-        --["VWXYZ"] = "vwxyz",
-        --["12345"] = "12345"
+        -- hunter class name
+        ["LOCALIZED_HUNTER_CLASS_NAME"] = "Jäger",
+        ["ADDON_DISABLED_NO_HUNTER"] = "Addon deaktiviert, da dieses Addon nur für Jäger bestimmt ist.", --Addon disabled because this addon is only for hunter
 
+        -- tooltips
         ["MODULES_BUTTON_TOOLTIP"] = "Module ein/ausschalten",
         ["OPTIONS_BUTTON_TOOLTIP"] = "Einstellungen",
         ["CLOSE_BUTTON_TOOLTIP"] = "Verbergen"

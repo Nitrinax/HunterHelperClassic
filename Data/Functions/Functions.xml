@@ -4,7 +4,11 @@
   <Script file="spairs.lua"/>
   <Script file="handleEvents.lua"/>
   <Script file="registerEvents.lua"/>
+  <Script file="checkForHunterClass.lua"/>
   <Script file="checkTwiceEvents.lua"/>
+  <Script file="colored_print.lua"/>
+  <Script file="tableHasKey.lua"/>
+  <Script file="tableHasValue.lua"/>
 
   <!-- frame functions --> 
   <Script file="frame\createMainFrame.lua"/>

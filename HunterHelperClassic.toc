@@ -3,7 +3,7 @@
 ## X-Short-Title: HHC
 ## Author: Nitrinax
 ## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
-## Version: 0.0.0-20
+## Version: 0.0.0-22
 ## RequiredDeps:
 ## OptionalDeps:
 ## SavedVariables: hhcAddonOptions

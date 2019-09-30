@@ -1,3 +1,10 @@
+0.0.0-22
+- included a debug function
+- added function checkForHunterClass to restrict addon to hunters
+- added UnitExists check to function checkIfPetSummoned
+- added function colored_print to print colored messages
+- added functions tableHasKey, tableHasValue
+
 0.0.0-21
 - added registerEvents, handleEvents to Modules\PetInfo
 - added events table to addon

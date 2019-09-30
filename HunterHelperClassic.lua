@@ -1,27 +1,39 @@
--- create main frame
-_HHC.Frames.Main = _HHC.Functions:createMainFrame();
+-- ### check for hunter class
+if _HHC.Functions:checkForHunterClass() == false then
 
--- setup main frame events
-_HHC.Functions:registerEvents(_HHC.Frames.Main);
+    -- show error messages if class != hunter
+    _HHC.Functions:colored_print("red", _HHC.Data.Title .. ": " .. _LibLocale:GetLocaleString(_HHC.Locale.Core, "ADDON_DISABLED_NO_HUNTER"))
 
--- create main frame title
-_HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main, _HHC.Data.ShortTitle);
+else
 
--- create main frame title buttons
-_HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, true, true, _HHC.Frames.Main );
+    -- ## main frame
 
--- load modules
+    -- create main frame
+    _HHC.Frames.Main = _HHC.Functions:createMainFrame();
 
--- module petinfo
-if _HHC.Modules.State["PetInfo"] == true then
+    -- setup main frame events
+    _HHC.Functions:registerEvents(_HHC.Frames.Main);
 
-    _HHC.Modules.PetInfo.Functions:Display(_HHC.Frames.Main);
+    -- create main frame title
+    _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main, _HHC.Data.ShortTitle);
 
-end
+    -- create main frame title buttons
+    _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, true, true, _HHC.Frames.Main );
 
--- addon loading message
-if _HHC.Options["SILENCE_ADDON"] == false then
+    -- ### loading modules
 
-    print (_HHC.Data.Title  .. " " .. _HHC.Data.Version .. " loaded");
+    -- module petinfo
+    if _HHC.Modules.State["PetInfo"] == true then
+
+        _HHC.Modules.PetInfo.Functions:Display(_HHC.Frames.Main);
+
+    end
+
+    -- addon loading message
+    if _HHC.Options["SILENCE_ADDON"] == false then
+
+        _HHC.Functions:colored_print("blue", _HHC.Data.Title  .. " " .. _HHC.Data.Version .. " loaded");
+
+    end
 
 end

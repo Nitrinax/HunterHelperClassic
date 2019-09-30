@@ -1,8 +1,13 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
     
-    <Script file="Libs\LibStub\LibStub.lua"/>
-    <Include file="Libs\LibLocale-0.1\LibLocale-0.1.xml"/>
-    <Include file="Libs\LibWidgets-0.1\LibWidgets-0.1.xml"/>
-    <Include file="Libs\LibZones-0.1\LibZones-0.1.xml"/>
+    <!-- libs -->
+    <Script file="Includes\Libs\LibStub\LibStub.lua"/>
+    <Include file="Includes\Libs\LibLocale-0.1\LibLocale-0.1.xml"/>
+    <Include file="Includes\Libs\LibWidgets-0.1\LibWidgets-0.1.xml"/>
+    <Include file="Includes\Libs\LibZones-0.1\LibZones-0.1.xml"/>
+
+    <!-- debug function -->
+    <Script file="Includes\ntrnx_debug_settings.lua"/>
+    <Script file="Includes\ntrnx_debug.lua"/>
 
 </Ui>
