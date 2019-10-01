@@ -6,7 +6,7 @@ if _HHC.Functions:checkForHunterClass() == false then
 
 else
 
-    -- ## main frame
+    -- ### main frame
 
     -- create main frame
     _HHC.Frames.Main = _HHC.Functions:createMainFrame();
@@ -18,14 +18,14 @@ else
     _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main, _HHC.Data.ShortTitle);
 
     -- create main frame title buttons
-    _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, true, true, _HHC.Frames.Main );
+    _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, false, false, false, _HHC.Frames.Main );
 
     -- ### loading modules
 
     -- module petinfo
     if _HHC.Modules.State["PetInfo"] == true then
-
-        _HHC.Modules.PetInfo.Functions:Display(_HHC.Frames.Main);
+        
+        _HHC.Modules.PetInfo.Frames.Main = _HHC.Modules.PetInfo.Functions:displayModule(_HHC.Frames.Main);
 
     end
 

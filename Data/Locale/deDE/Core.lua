@@ -8,6 +8,7 @@ if GetLocale() == "deDE" then
 
         -- tooltips
         ["MODULES_BUTTON_TOOLTIP"] = "Module ein/ausschalten",
+        ["ELEMENTS_BUTTON_TOOLTIP"] = "Elemente ein/ausschalten",
         ["OPTIONS_BUTTON_TOOLTIP"] = "Einstellungen",
         ["CLOSE_BUTTON_TOOLTIP"] = "Verbergen"
 

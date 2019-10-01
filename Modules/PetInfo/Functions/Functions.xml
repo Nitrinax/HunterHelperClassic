@@ -1,6 +1,7 @@
-<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
     
-    <!-- frame -->
+    <!-- frame -->    
     <Script file="createPetFrame.lua"/>
 
     <!-- events -->
@@ -33,5 +34,8 @@
     <!-- <Script file="showLearnableAbilities.lua"/> -->
 
     <!-- <Script file="XXXXX.lua"/> -->
+
+    <!-- display module frame -->
+    <Script file="displayModule.lua"/>
 
 </Ui>

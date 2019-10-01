@@ -1,10 +1,12 @@
 function _HHC.Modules.PetInfo.Functions:checkPetSameLevelAsPlayer()
 
-    local playerlevelSub = _HHC.Data.RealPlayerLevel;
+    local playerLevel = _HHC.Data.RealPlayerLevel;    
+    --print(playerLevel);
 
-    local petlevelSub = UnitLevel("pet");
+    local petLevel = UnitLevel("pet");
+    --print(petLevel);
 
-    if petlevelSub < playerlevelSub then
+    if petLevel < playerLevel then
 
         return false;
 

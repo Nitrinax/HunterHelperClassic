@@ -1,11 +1,11 @@
-function _HHC.Modules.PetInfo.Functions:updatePetXPBar(frame)
+function _HHC.Modules.PetInfo.Functions:updatePetXPBar()
 
     local currXP, nextXP = GetPetExperience();
 
-    frame.pet.xpbar:SetMinMaxValues(0, nextXP);
+    _HHC.Modules.PetInfo.Element.Xpbar:SetMinMaxValues(0, nextXP);
 
-    frame.pet.xpbar:SetValue(currXP);
+    _HHC.Modules.PetInfo.Element.Xpbar:SetValue(currXP);
 
-    _LibWidgets:setText(frame.pet.xpbar.value, currXP .. " / " .. nextXP .. " XP");
+    _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, currXP .. " / " .. nextXP .. " XP");
 
 end

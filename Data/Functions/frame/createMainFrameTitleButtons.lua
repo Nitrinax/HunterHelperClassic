@@ -1,34 +1,38 @@
-function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, modulesButtonState, optionsButtonState, closeButtonState, closeButtonTargetFrame)
+function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonState, optionsButtonState, elementsButtonState, modulesButtonState, closeButtonTargetFrame)
 
     local buttons = {};
 
-    -- options button
-    if modulesButtonState == true then
+    _HHC.Data.buttonOffset = -4;
 
-        buttons.modulesButton = _LibWidgets:createButton(
-            "modulesButton",
+    -- close button
+    if closeButtonState == true then
+
+        buttons.closeButton = _LibWidgets:createButton(
+            "closeButton",
             inheritFrame,
-            nil,
-            _HHC.Textures["TEXTURE_MODULES_BUTTON_NORMAL"],
-            _HHC.Textures["TEXTURE_MODULES_BUTTON_PUSHED"],
-            _HHC.Textures["TEXTURE_MODULES_BUTTON_HIGHLIGHT"],
-            20,
-            20,
-            _HHC.Locale.Core["MODULES_BUTTON_TOOLTIP"]
+            "UIPanelCloseButton",
+            nil, -- _HHC.Textures["CLOSE_BUTTON_NORMAL_TEXTURE"]
+            nil, -- _HHC.Textures["CLOSE_BUTTON_PUSHED_TEXTURE"]
+            nil, -- _HHC.Textures["CLOSE_BUTTON_HIGHLIGHT_TEXTURE"]
+            34,
+            34,
+            _HHC.Locale.Core["CLOSE_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.modulesButton, "RIGHT", -44, 0);
+        _LibWidgets:setPoint(buttons.closeButton, "RIGHT", _HHC.Data.buttonOffset + 7, 0);
 
-        --buttons.modulesButton:SetScript("OnClick", function()
+        buttons.closeButton:SetScript("OnClick", function()
 
-            --    hhwcOptionsFrame:Show();
+            closeButtonTargetFrame:Hide();
 
-        --end)
+        end)
 
-        buttons.modulesButton:SetFrameLevel(buttons.modulesButton:GetFrameLevel() + 1)
+        _LibWidgets:setFrameLevel(buttons.closeButton, _LibWidgets:getFrameLevel(buttons.closeButton) + 1)
 
         --alpha
-        _LibWidgets:setAlpha(buttons.modulesButton, 0.75);
+        _LibWidgets:setAlpha(buttons.closeButton, 0.75);
+
+        _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 18;
 
     end
 
@@ -39,15 +43,15 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, modulesButtonS
             "optionsButton",
             inheritFrame,
             nil,
-            _HHC.Textures["TEXTURE_OPTIONS_BUTTON_NORMAL"],
-            nil,
-            _HHC.Textures["TEXTURE_OPTIONS_BUTTON_HIGHLIGHT"],
-            18,
+            _HHC.Textures["OPTIONS_BUTTON_NORMAL_TEXTURE"],
+            _HHC.Textures["OPTIONS_BUTTON_PUSHED_TEXTURE"],
+            _HHC.Textures["OPTIONS_BUTTON_HIGHLIGHT_TEXTURE"],
+            20,
             18,
             _HHC.Locale.Core["OPTIONS_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.optionsButton, "RIGHT", -25, 0);
+        _LibWidgets:setPoint(buttons.optionsButton, "RIGHT", _HHC.Data.buttonOffset, 0);
 
         --buttons.optionsButton:SetScript("OnClick", function()
 
@@ -55,40 +59,87 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, modulesButtonS
 
         --end)
 
-        buttons.optionsButton:SetFrameLevel(buttons.optionsButton:GetFrameLevel() + 1)
+        _LibWidgets:setFrameLevel(buttons.optionsButton, _LibWidgets:getFrameLevel(buttons.optionsButton) + 1)
 
         --alpha
         _LibWidgets:setAlpha(buttons.optionsButton, 0.75);
 
+        _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 20;
+
     end
 
-    -- close button
-    if closeButtonState == true then
+    -- elements button
+    if elementsButtonState == true then
 
-        buttons.closeButton = _LibWidgets:createButton(
-            "closeButton",
+        buttons.elementsButton = _LibWidgets:createButton(
+            "elementsButton",
             inheritFrame,
-            "UIPanelCloseButton",
-            nil,
-            nil,
-            nil,
-            34,
-            34,
-            _HHC.Locale.Core["CLOSE_BUTTON_TOOLTIP"]
+            "GameMenuButtonTemplate", --nil,
+            nil, --_HHC.Textures["ELEMENTS_BUTTON_NORMAL_TEXTURE"],
+            nil, --_HHC.Textures["ELEMENTS_BUTTON_PUSHED_TEXTURE"],
+            nil, --_HHC.Textures["ELEMENTS_BUTTON_HIGHLIGHT_TEXTURE"],
+            22,
+            18,
+            _HHC.Locale.Core["ELEMENTS_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.closeButton, "RIGHT", 2, 0);
+        _LibWidgets:setPoint(buttons.elementsButton, "RIGHT", _HHC.Data.buttonOffset, 0);
 
-        buttons.closeButton:SetScript("OnClick", function()
+        -- button text
+        buttons.elementsButton.text = _LibWidgets:createFontString(buttons.elementsButton, nil, nil, _HHC.Fonts["DEFAULT_GAME_FONT"]);
+        _LibWidgets:setAllPoints(buttons.elementsButton.text);
+        _LibWidgets:setText(buttons.elementsButton.text, "E");
+        _LibWidgets:setPoint(buttons.elementsButton.text, "CENTER", 1, 0 );
 
-            closeButtonTargetFrame:Hide();
+        --buttons.elementsButton:SetScript("OnClick", function()
 
-        end)
+            --    hhwcOptionsFrame:Show();
 
-        buttons.closeButton:SetFrameLevel(buttons.closeButton:GetFrameLevel() + 1)
+        --end)
+
+        _LibWidgets:setFrameLevel(buttons.elementsButton, _LibWidgets:getFrameLevel(buttons.elementsButton) + 1)
 
         --alpha
-        _LibWidgets:setAlpha(buttons.closeButton, 0.75);
+        _LibWidgets:setAlpha(buttons.elementsButton, 0.75);
+
+        _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 22;
+
+    end
+
+    -- modules button
+    if modulesButtonState == true then
+
+        buttons.modulesButton = _LibWidgets:createButton(
+            "modulesButton",
+            inheritFrame,
+            "GameMenuButtonTemplate", --nil,
+            nil, --_HHC.Textures["MODULES_BUTTON_NORMAL_TEXTURE"],
+            nil, --_HHC.Textures["MODULES_BUTTON_PUSHED_TEXTURE"],
+            nil, --_HHC.Textures["MODULES_BUTTON_HIGHLIGHT_TEXTURE"],
+            22,
+            18,
+            _HHC.Locale.Core["MODULES_BUTTON_TOOLTIP"]
+        );
+
+        --_LibWidgets:setPoint(buttons.modulesButton, "RIGHT", -63, 0);
+        _LibWidgets:setPoint(buttons.modulesButton, "RIGHT", _HHC.Data.buttonOffset, 0);
+
+        -- button text
+        buttons.modulesButton.text = _LibWidgets:createFontString(buttons.modulesButton, nil, nil, _HHC.Fonts["DEFAULT_GAME_FONT"]);
+        _LibWidgets:setAllPoints(buttons.modulesButton.text);
+        _LibWidgets:setText(buttons.modulesButton.text, "M");
+        _LibWidgets:setPoint(buttons.modulesButton.text, "CENTER", 1, 0 );
+
+        --buttons.modulesButton:SetScript("OnClick", function()
+
+            --    hhwcOptionsFrame:Show();
+
+        --end)
+
+        _LibWidgets:setFrameLevel(buttons.modulesButton, _LibWidgets:getFrameLevel(buttons.modulesButton) + 1)
+
+        --alpha
+        _LibWidgets:setAlpha(buttons.modulesButton, 0.75);
 
     end
 

@@ -1,3 +1,17 @@
+0.0.0-23
+- change leading xml tag in all xml files
+- renamed file Modules\PetInfo\Core.lua to Modules\PetInfo\PetInfo.lua, Modules\PetInfo\Module.lua to Modules\PetInfo\ModuleData.lua
+- added var _HHC.Modules.PetInfo.Data["MODULE_REVISION"]
+- move function _HHC.Modules.PetInfo.Element.Functions:Display from file PetInfo.lua to displayModule.lua
+- renamed function _HHC.Modules.PetInfo.Element.Functions:Display to _HHC.Modules.PetInfo.Element.Functions:displayModule
+- added new file colors.lua for default colors, move color definitions from frames.lua to colors.lua
+- added function setAllPoints, getFrameLevel, setFrameLevel to LibWidgets
+- overhauled function createMainFrameTitleButtons
+- changed default font tags
+- changed default frame tags
+- changed default texture tags
+- added localized translation for element button
+
 0.0.0-22
 - included a debug function
 - added function checkForHunterClass to restrict addon to hunters
