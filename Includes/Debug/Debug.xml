@@ -1,13 +1,8 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-    
-    <!-- libs -->
-    <Include file="Includes\Libs\Libs.xml"/>
 
     <!-- debug function -->
-    <Include file="Includes\Debug\Debug.xml"/>
-
-    <!-- custom functions -->
-    <Include file="Includes\Custom\Custom.xml"/>
+    <Script file="ntrnx_debug_settings.lua"/>
+    <Script file="ntrnx_debug.lua"/>
 
 </Ui>

@@ -1,3 +1,5 @@
---enable/disable modules
-_HHC.Modules.State["PetInfo"] = false;
-_HHC.Modules.State["PetInfo"] = true;
+-- modules list
+_HHC.Modules.List = {
+    ["PetInfo"] = true,
+    ["PlayerInfo"] = false
+};

@@ -1,4 +1,4 @@
-function _HHC.Modules.PetInfo.Element.Functions:createExperiencePointsElement(frame)
+function _HHC.Modules.PetInfo.Element.Functions:createExperiencepointsElement(frame)
 
     frame.statusbar = _LibWidgets:createStatusBar("StatusBar", frame, 
         _HHC.Modules.PetInfo.Element.Defaults["DEFAULT_PET_FRAME_EXPERIENCE_POINTS_ELEMENT_WIDTH"],

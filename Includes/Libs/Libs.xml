@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    
+    <!-- libs -->
+    <Script file="LibStub\LibStub.lua"/>
+    <Include file="LibLocale-0.1\LibLocale-0.1.xml"/>
+    <Include file="LibWidgets-0.1\LibWidgets-0.1.xml"/>
+    <Include file="LibZones-0.1\LibZones-0.1.xml"/>
+
+</Ui>

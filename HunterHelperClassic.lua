@@ -21,18 +21,24 @@ else
     _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, false, false, false, _HHC.Frames.Main );
 
     -- ### loading modules
+    for key, value in sorted_pairs(_HHC.Modules.List) do
 
-    -- module petinfo
-    if _HHC.Modules.State["PetInfo"] == true then
-        
-        _HHC.Modules.PetInfo.Frames.Main = _HHC.Modules.PetInfo.Functions:displayModule(_HHC.Frames.Main);
+        --ntrnx_debug(colored_print("yellow", "_HHC.Modules.List[\"" .. key .. "\"] = " .. tostring(value), true));
+
+        if value == true then
+
+            module_loader = "_HHC.Modules.".. key .. ".Frames.Main = _HHC.Modules." .. key .. ".Functions:displayModule(_HHC.Frames.Main);";
+
+            RunScript(module_loader);
+
+        end
 
     end
 
     -- addon loading message
     if _HHC.Options["SILENCE_ADDON"] == false then
 
-        _HHC.Functions:colored_print("blue", _HHC.Data.Title  .. " " .. _HHC.Data.Version .. " loaded");
+        colored_print("blue", _HHC.Data.Title  .. " " .. _HHC.Data.Version .. " loaded");
 
     end
 

@@ -1,8 +1,8 @@
-function _HHC.Functions:tableHasKey(table, key)
+function table_has_value(table, value)
 
     for k, v in pairs(table) do
 
-        if k == key then
+        if v == value then
 
             return k;
 

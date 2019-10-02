@@ -1,4 +1,4 @@
-function _HHC.Functions:colored_print(color, text)
+function colored_print(color, text, stream)
 
     if color == "red" then text = ("|cFFFF3333" .. text .. "|r");
     --elseif color == "darkred" then text = ("|cFF" .. text .. "|r");
@@ -15,6 +15,14 @@ function _HHC.Functions:colored_print(color, text)
     elseif color == "pink" then text = ("|cFF" .. text .. "|r");
     end
 
-    return text;
+    if stream == true then
+
+        return text;
+
+    else
+
+        print(text);
+
+    end
 
 end

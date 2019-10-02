@@ -1,13 +1,11 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-    
-    <!-- libs -->
-    <Include file="Includes\Libs\Libs.xml"/>
-
-    <!-- debug function -->
-    <Include file="Includes\Debug\Debug.xml"/>
 
     <!-- custom functions -->
-    <Include file="Includes\Custom\Custom.xml"/>
+    <Script file="colored_print.lua"/>
+    <Script file="sorted_pairs.lua"/>
+    <Script file="strfcupper.lua"/>
+    <Script file="table_has_key.lua"/>
+    <Script file="table_has_value.lua"/>
 
 </Ui>

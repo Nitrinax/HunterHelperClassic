@@ -17,44 +17,44 @@ function _HHC.Modules.PetInfo.Functions:handleEvents(frame)
             -- end
 
             -- check if pet summoned
-            if _HHC.Modules.PetInfo.Functions:checkIfPetSummoned() == true then
+            -- if _HHC.Modules.PetInfo.Functions:checkIfPetSummoned() == true then
 
-                -- set pet name
-                local unitName = GetUnitName("pet", false);        
+            --     -- set pet name
+            --     local unitName = GetUnitName("pet", false);        
 
-                _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Name, unitName);
+            --     _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Name, unitName);
 
-                -- check if pet has same level as player
-                if _HHC.Modules.PetInfo.Functions:checkPetSameLevelAsPlayer() == false then
+            --     -- check if pet has same level as player
+            --     if _HHC.Modules.PetInfo.Functions:checkPetSameLevelAsPlayer() == false then
 
-                    _HHC.Modules.PetInfo.Functions:updatePetXPBar();
+            --         _HHC.Modules.PetInfo.Functions:updatePetXPBar();
 
-                else
+            --     else
 
-                    _HHC.Modules.PetInfo.Element.Xpbar:SetValue(0);
+            --         _HHC.Modules.PetInfo.Element.Xpbar:SetValue(0);
 
-                    -- check if pet max level
-                    if _HHC.Modules.PetInfo.Functions:checkUnitMaxLevel("pet") == false then
+            --         -- check if pet max level
+            --         if _HHC.Modules.PetInfo.Functions:checkUnitMaxLevel("pet") == false then
 
-                        _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Element.Locale.ExperiencePoints, "PLAYER_LEVEL_REACHED"));
+            --             _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Element.Locale.ExperiencePoints, "PLAYER_LEVEL_REACHED"));
 
-                    else
+            --         else
 
-                        _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Element.Locale.ExperiencePoints, "MAX_LEVEL_REACHED"));
+            --             _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Element.Locale.ExperiencePoints, "MAX_LEVEL_REACHED"));
 
-                    end
+            --         end
 
-                end
+            --     end
 
-            else
+            -- else
 
-                _HHC.Modules.PetInfo.Element.Xpbar:SetValue(0);
+            --     _HHC.Modules.PetInfo.Element.Xpbar:SetValue(0);
 
-                _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, "-- / --");
+            --     _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Xpbar.value, "-- / --");
 
-                _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Name , _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Locale.Core, "NO_PET_SOMMONED"));
+            --     _LibWidgets:setText(_HHC.Modules.PetInfo.Element.Name , _LibLocale:GetLocaleString(_HHC.Modules.PetInfo.Locale.Core, "NO_PET_SOMMONED"));
 
-            end
+            -- end
 
         -- check event UNIT_HAPPINESS
         elseif event == "UNIT_HAPPINESS" then

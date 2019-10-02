@@ -1,3 +1,10 @@
+0.0.0-24
+- overhauled function _HHC.Modules.PetInfo.Functions:displayModule
+- functions color_print, sorted_pairs, table_has_key, table_has_value from addon moved to independent functions
+- reworked module loading to load from module list, not from single module variables
+- reworked module element loading to load from element list, not from single element variables
+- new function strfcupper to convert first char of a string to capital
+
 0.0.0-23
 - change leading xml tag in all xml files
 - renamed file Modules\PetInfo\Core.lua to Modules\PetInfo\PetInfo.lua, Modules\PetInfo\Module.lua to Modules\PetInfo\ModuleData.lua
