@@ -9,7 +9,7 @@
   <Script file="Frames.lua"/>
   <Script file="Buttons.lua"/>
   <Script file="Icons.lua"/>  
-  <Script file="Textures.lua"/>  
+  <Script file="Textures.lua"/>
   <Script file="Modules.lua"/>
 
 </Ui>
