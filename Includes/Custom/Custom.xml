@@ -2,9 +2,10 @@
 ..\FrameXML\UI.xsd">
 
     <!-- custom functions -->
+    <Script file="addonTocFunctions.lua"/>
     <Script file="colored_print.lua"/>
     <Script file="sorted_pairs.lua"/>
-    <Script file="strfcupper.lua"/>
+    <Script file="str_fc_upper.lua"/>
     <Script file="table_has_key.lua"/>
     <Script file="table_has_value.lua"/>
 

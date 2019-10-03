@@ -2,6 +2,6 @@
 ..\FrameXML\UI.xsd">
 
     <!-- # Functions -->
-	<Script file="GetLocaleString.lua"/>
+    <Script file="GetCatalogStr.lua"/>
 
 </Ui>

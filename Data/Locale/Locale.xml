@@ -3,7 +3,5 @@
 
   <Include file="deDE\deDE.xml"/>
   <!-- <Include file="enUS\enUS.xml"/> -->
-  <!-- <Include file="abAB\abAB.xml"/> -->
-  <!-- <Include file="cdDE\cdDE.xml"/> -->
 
 </Ui>

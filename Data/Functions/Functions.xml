@@ -1,21 +1,17 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-  <!-- main functions-->
-  <Script file="spairs.lua"/>
-  <Script file="handleEvents.lua"/>
-  <Script file="registerEvents.lua"/>
+  <!-- main functions -->
+  <!-- <Script file="handleEvents.lua"/> -->
+  <!-- <Script file="registerEvents.lua"/> -->
   <Script file="checkForHunterClass.lua"/>
-  <Script file="checkTwiceEvents.lua"/>
-  <Script file="colored_print.lua"/>
-  <Script file="tableHasKey.lua"/>
-  <Script file="tableHasValue.lua"/>
+  <!-- <Script file="checkTwiceEvents.lua"/> -->
 
   <!-- frame functions --> 
-  <Script file="frame\createMainFrame.lua"/>
-  <Script file="frame\createMainFrameTitle.lua"/>
-  <Script file="frame\createMainFrameTitleButtons.lua"/>
+  <!-- <Script file="frame\createMainFrame.lua"/> -->
+  <!-- <Script file="frame\createMainFrameTitle.lua"/> -->
+  <!-- <Script file="frame\createMainFrameTitleButtons.lua"/> -->
 
   <!-- button functions  -->
-  <Script file="button\createButton.lua"/>
+  <!-- <Script file="button\createButton.lua"/> -->
 
 </Ui>
