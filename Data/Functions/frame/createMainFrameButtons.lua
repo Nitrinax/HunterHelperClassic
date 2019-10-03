@@ -1,11 +1,11 @@
-function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonState, optionsButtonState, elementsButtonState, modulesButtonState, closeButtonTargetFrame)
+function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
     local buttons = {};
 
     _HHC.Data.buttonOffset = -4;
 
     -- close button
-    if closeButtonState == true then
+    if _HHC.Options.Buttons.Main.Close == true then
 
         buttons.closeButton = _LibWidgets:createButton(
             "closeButton",
@@ -23,7 +23,7 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonSta
 
         buttons.closeButton:SetScript("OnClick", function()
 
-            closeButtonTargetFrame:Hide();
+            targetFrame:Hide();
 
         end)
 
@@ -37,7 +37,7 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonSta
     end
 
     -- options button
-    if optionsButtonState == true then
+    if _HHC.Options.Buttons.Main.Options == true then
 
         buttons.optionsButton = _LibWidgets:createButton(
             "optionsButton",
@@ -69,7 +69,7 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonSta
     end
 
     -- elements button
-    if elementsButtonState == true then
+    if _HHC.Options.Buttons.Main.Elements == true then
 
         buttons.elementsButton = _LibWidgets:createButton(
             "elementsButton",
@@ -107,7 +107,7 @@ function _HHC.Functions:createMainFrameTitleButtons(inheritFrame, closeButtonSta
     end
 
     -- modules button
-    if modulesButtonState == true then
+    if _HHC.Options.Buttons.Main.Modules == true then
 
         buttons.modulesButton = _LibWidgets:createButton(
             "modulesButton",

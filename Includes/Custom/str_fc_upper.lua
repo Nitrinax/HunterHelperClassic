@@ -1,4 +1,4 @@
-function strfcupper(string)
+function str_fc_upper(string)
 
     -- convert complete string to lower
     local loweredstring = strlower(string);
@@ -9,7 +9,7 @@ function strfcupper(string)
     -- get remaining part of string
     local remainingchars = strsub(loweredstring, 2);
 
-    --combine both parts
+    -- combine both parts
     local returningstring = capitalletter .. remainingchars;
 
     return returningstring;

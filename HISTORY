@@ -1,3 +1,24 @@
+0.0.1-2
+- changed table name from _HHC.Defaults to _HHC.Colors in file Data\Defaults\Colors.lua
+- new file Data\Defaults\Data.lua
+- removed file Data\Defaults\Defaults.lua
+- changed table name from _HHC.Defaults to _HHC.Frames in file Data\Defaults\Frames.lua
+- added option _HHC.Options["DEBUG_ADDON"] to file Data\Defaults\Options.lua
+- overhauled some id names in file Data\Locale\deDe\Core.lua
+- renamed and overhauled Libs\LibLocale-0.1\Functions\getCatalogStr
+- overhauled HunterHelperClassic.lua
+- overhauled HunterHelperClassic.toc
+- new file Includes\Custom\addonTocFunctions.lua
+- renamed file and function Includes\Custom\str_fc_upper.lua
+- fixed ntrnx_debug.lua if modpos = nil
+- new file Data\Defaults\Buttons.lua for button settings
+
+0.0.1-1
+- rewroted project
+
+0.0.0-25
+- removed unused file includes in Data\Defaults\Functions\Functions.xml
+
 0.0.0-24
 - overhauled function _HHC.Modules.PetInfo.Functions:displayModule
 - functions color_print, sorted_pairs, table_has_key, table_has_value from addon moved to independent functions

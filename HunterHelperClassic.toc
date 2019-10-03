@@ -1,25 +1,56 @@
 ## Interface: 11302
+
+## Version: 0.0.1
+## X-Revision: 3
+## X-Date: 03.10.2019
+
 ## Title: HunterHelperClassic
-## X-Short-Title: HHC
+# Title-frFR: HunterHelperClassic
+## Title-deDE: HunterHelperClassic
+# Title-koKR: HunterHelperClassic
+# Title-itIT: HunterHelperClassic
+# Title-esMX: HunterHelperClassic
+# Title-ruRU: HunterHelperClassic
+# Title-zhCN: HunterHelperClassic
+# Title-esES: HunterHelperClassic
+# Title-zhTW: HunterHelperClassic
+# Title-ptBR: HunterHelperClassic
+
+## Notes: provides useful information and functions for the hunter and the hunter's pet
+# Notes-frFR: 
+## Notes-deDE: stellt nützliche Informationen und Funktionen für den Jäger und den Jägerbegleiter bereit
+# Notes-koKR: 
+# Notes-itIT: 
+# Notes-esMX: 
+# Notes-ruRU: 
+# Notes-zhCN: 
+# Notes-esES: 
+# Notes-zhTW: 
+# Notes-ptBR: 
+
 ## Author: Nitrinax
-## Notes: provide useful informations and functions for the Hunter and the Hunter Pet
-## Version: 0.0.0-24
-## RequiredDeps:
-## OptionalDeps:
-## SavedVariables: hhcAddonOptions
-## SavedVariablesPerCharacter: hhcAddonOptions
+
 ## X-Category: Interface Enhancements
+
+# X-Localizations: enUS, frFR, zhCN, zhTW, deDE, itIT, koKR, esES, esMX, ruRU, ptBR
+## X-Localizations: enUS, deDE
+
+## X-Short-Title: HHC
+
 ## X-Website: https://github.com/Nitrinax/HunterHelperClassic
 ## X-Github: https://github.com/Nitrinax/HunterHelperClassic
+# X-Feedback: 
 ## X-License: GPLv3
 
+## DefaultState: Enabled
+## SavedVariables: HunterHelperClassic
+## SavedVariablesPerCharacter: HunterHelperClassic
+
+# includes
 embeds.xml
 
-# Data
+# data
 Data\Data.xml
 
-# Modules
-Modules\Modules.xml
-
-# Main
+# core
 HunterHelperClassic.lua

@@ -2,25 +2,35 @@
 if _HHC.Functions:checkForHunterClass() == false then
 
     -- show error messages if class != hunter
-    _HHC.Functions:colored_print("red", _HHC.Data.Title .. ": " .. _LibLocale:GetLocaleString(_HHC.Locale.Core, "ADDON_DISABLED_NO_HUNTER"))
+    colored_print("red", _HHC.Data.Title .. ": " .. _LibLocale:GetCatalogStr(_HHC.Locale.Core, "ADDON_DISABLED_ONLY_FOR_HUNTER_CLASS", "Addon disabled because this addon is only for hunter"));
+
+    -- self disabling
+    DisableAddOn(_HHC.Data.AddonName);
 
 else
 
-    -- ### main frame
+    if not _HHC.Options["SILENCE_ADDON"] or
+        _HHC.Options["SILENCE_ADDON"] == nil or
+        _HHC.Options["SILENCE_ADDON"] == false then
+
+        -- show loading message
+        print(colored_print( "yellow", _HHC.Data.LongVersionString, true) .. " " .. _LibLocale:GetCatalogStr(_HHC.Locale.Core, "ADDON_LOADED", "loaded"));
+
+    end
 
     -- create main frame
     _HHC.Frames.Main = _HHC.Functions:createMainFrame();
 
     -- setup main frame events
     _HHC.Functions:registerEvents(_HHC.Frames.Main);
-
+    
     -- create main frame title
-    _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main, _HHC.Data.ShortTitle);
+    _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main);
 
-    -- create main frame title buttons
-    _HHC.Frames.Main.Title.Buttons = _HHC.Functions:createMainFrameTitleButtons(_HHC.Frames.Main.Title, true, false, false, false, _HHC.Frames.Main );
+    -- create main frame buttons
+    _HHC.Frames.Main.Buttons = _HHC.Functions:createMainFrameButtons(_HHC.Frames.Main.Title, _HHC.Frames.Main);
 
-    -- ### loading modules
+    -- load modules
     for key, value in sorted_pairs(_HHC.Modules.List) do
 
         --ntrnx_debug(colored_print("yellow", "_HHC.Modules.List[\"" .. key .. "\"] = " .. tostring(value), true));
@@ -29,16 +39,9 @@ else
 
             module_loader = "_HHC.Modules.".. key .. ".Frames.Main = _HHC.Modules." .. key .. ".Functions:displayModule(_HHC.Frames.Main);";
 
-            RunScript(module_loader);
+            --RunScript(module_loader);
 
         end
-
-    end
-
-    -- addon loading message
-    if _HHC.Options["SILENCE_ADDON"] == false then
-
-        colored_print("blue", _HHC.Data.Title  .. " " .. _HHC.Data.Version .. " loaded");
 
     end
 

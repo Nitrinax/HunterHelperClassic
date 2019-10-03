@@ -2,12 +2,14 @@
 ..\FrameXML\UI.xsd">
 
   <Script file="Init.lua"/>
+  <Script file="Data.lua"/>
+  <Script file="Options.lua"/>
   <Script file="Colors.lua"/>
-  <Script file="Defaults.lua"/>
   <Script file="Fonts.lua"/>
   <Script file="Frames.lua"/>
-  <Script file="Icons.lua"/>
+  <Script file="Buttons.lua"/>
+  <Script file="Icons.lua"/>  
+  <Script file="Textures.lua"/>  
   <Script file="Modules.lua"/>
-  <Script file="Textures.lua"/>
 
 </Ui>

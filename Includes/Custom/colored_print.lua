@@ -1,3 +1,4 @@
+-- format string with color tags
 function colored_print(color, text, stream)
 
     if color == "red" then text = ("|cFFFF3333" .. text .. "|r");
@@ -15,6 +16,7 @@ function colored_print(color, text, stream)
     elseif color == "pink" then text = ("|cFF" .. text .. "|r");
     end
 
+    -- return stream
     if stream == true then
 
         return text;

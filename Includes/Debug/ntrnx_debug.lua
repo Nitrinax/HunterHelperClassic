@@ -31,7 +31,10 @@ function ntrnx_debug(string)
             if (slashpos) then
 
                 local modpos = strfind(result_1, NTRNX_DEBUG_ADDON_ABBREVATION);
-                --print(modpos);
+                --print(modpos);                
+
+                -- fix if modpos == nil
+                if modpos == nil then modpos = 0; end
 
                 local strfindpart = strsub(NTRNX_DEBUG_ADDON_ABBREVATION, 1, 1);
                 --print(strfindpart);
