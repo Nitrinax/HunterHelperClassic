@@ -1,0 +1,52 @@
+API UIFrameFadeIn
+
+UIFrameFadeIn(frame, timeToFade, startAlpha, endAlpha)
+UIFrameFadeOut(frame, timeToFade, startAlpha, endAlpha)
+
+ Arguments
+
+    (frame, timeToFade, startAlpha, endAlpha)
+
+    frame 
+        Frame - The frame to fade 
+    timeToFade 
+        Number the time it takes to fade in or out (in seconds) 
+    startAlpha 
+        Number - The beginning alpha value (between 0 and 1) 
+    endAlpha 
+        Number - The ending alpha value (between 0 and 1) 
+
+Returns
+
+    nil
+
+
+
+
+
+API UIFrameFlash
+
+UIFrameFlash(frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime)
+ Parameters
+Arguments
+
+    frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime 
+
+    frame 
+        Frame Pointer - frame to fade in / out. 
+    fadeInTime 
+        Number - duration of the fade in effect. 
+    fadeOutTime 
+        Number - duration of the fade out effect. 
+    flashDuration 
+        Number - number of seconds to keep repeating the fade in / out cycle. 
+    showWhenDone 
+        Boolean - should the frame be visible at the end? 
+    flashInHoldTime
+        Number - number of seconds to hold the fully hidden state. 
+    flashOutHoldTime 
+        Number - number of seconds to hold the fully visible state. 
+
+Returns
+
+This function does not return any values. 

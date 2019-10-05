@@ -19,18 +19,26 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
             _HHC.Locale.Core["CLOSE_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.closeButton, "RIGHT", _HHC.Data.buttonOffset + 7, 0);
+        _LibWidgets:setPoint(buttons.closeButton,
+            "RIGHT",
+            _HHC.Data.buttonOffset + 7,
+            0
+        );
 
         buttons.closeButton:SetScript("OnClick", function()
 
             targetFrame:Hide();
 
-        end)
+        end);
 
-        _LibWidgets:setFrameLevel(buttons.closeButton, _LibWidgets:getFrameLevel(buttons.closeButton) + 1)
+        _LibWidgets:setFrameLevel(buttons.closeButton,
+            _LibWidgets:getFrameLevel(buttons.closeButton) + 1
+        );
 
         --alpha
-        _LibWidgets:setAlpha(buttons.closeButton, 0.75);
+        _LibWidgets:setAlpha(buttons.closeButton,
+            0.75
+        );
 
         _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 18;
 
@@ -51,7 +59,11 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
             _HHC.Locale.Core["OPTIONS_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.optionsButton, "RIGHT", _HHC.Data.buttonOffset, 0);
+        _LibWidgets:setPoint(buttons.optionsButton,
+            "RIGHT",
+            _HHC.Data.buttonOffset,
+            0
+        );
 
         --buttons.optionsButton:SetScript("OnClick", function()
 
@@ -59,10 +71,14 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --end)
 
-        _LibWidgets:setFrameLevel(buttons.optionsButton, _LibWidgets:getFrameLevel(buttons.optionsButton) + 1)
+        _LibWidgets:setFrameLevel(buttons.optionsButton,
+            _LibWidgets:getFrameLevel(buttons.optionsButton) + 1
+        );
 
         --alpha
-        _LibWidgets:setAlpha(buttons.optionsButton, 0.75);
+        _LibWidgets:setAlpha(buttons.optionsButton,
+            0.75
+        );
 
         _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 20;
 
@@ -83,13 +99,30 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
             _HHC.Locale.Core["ELEMENTS_BUTTON_TOOLTIP"]
         );
 
-        _LibWidgets:setPoint(buttons.elementsButton, "RIGHT", _HHC.Data.buttonOffset, 0);
+        _LibWidgets:setPoint(buttons.elementsButton,
+            "RIGHT",
+            _HHC.Data.buttonOffset,
+            0
+        );
 
         -- button text
-        buttons.elementsButton.text = _LibWidgets:createFontString(buttons.elementsButton, nil, nil, _HHC.Fonts["DEFAULT_GAME_FONT"]);
+        buttons.elementsButton.text = _LibWidgets:createFontString(buttons.elementsButton,
+            nil,
+            nil,
+            _HHC.Fonts["DEFAULT_GAME_FONT"]
+        );
+
         _LibWidgets:setAllPoints(buttons.elementsButton.text);
-        _LibWidgets:setText(buttons.elementsButton.text, "E");
-        _LibWidgets:setPoint(buttons.elementsButton.text, "CENTER", 1, 0 );
+        
+        _LibWidgets:setText(buttons.elementsButton.text, 
+            "E"
+        );
+
+        _LibWidgets:setPoint(buttons.elementsButton.text,
+            "CENTER",
+            1,
+            0
+        );
 
         --buttons.elementsButton:SetScript("OnClick", function()
 
@@ -97,10 +130,14 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --end)
 
-        _LibWidgets:setFrameLevel(buttons.elementsButton, _LibWidgets:getFrameLevel(buttons.elementsButton) + 1)
+        _LibWidgets:setFrameLevel(buttons.elementsButton,
+            _LibWidgets:getFrameLevel(buttons.elementsButton) + 1
+        );
 
         --alpha
-        _LibWidgets:setAlpha(buttons.elementsButton, 0.75);
+        _LibWidgets:setAlpha(buttons.elementsButton,
+            0.75
+        );
 
         _HHC.Data.buttonOffset = _HHC.Data.buttonOffset - 22;
 
@@ -122,13 +159,30 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
         );
 
         --_LibWidgets:setPoint(buttons.modulesButton, "RIGHT", -63, 0);
-        _LibWidgets:setPoint(buttons.modulesButton, "RIGHT", _HHC.Data.buttonOffset, 0);
+        _LibWidgets:setPoint(buttons.modulesButton,
+            "RIGHT",
+            _HHC.Data.buttonOffset,
+            0
+        );
 
         -- button text
-        buttons.modulesButton.text = _LibWidgets:createFontString(buttons.modulesButton, nil, nil, _HHC.Fonts["DEFAULT_GAME_FONT"]);
+        buttons.modulesButton.text = _LibWidgets:createFontString(buttons.modulesButton,
+            nil,
+            nil,
+            _HHC.Fonts["DEFAULT_GAME_FONT"]
+        );
+
         _LibWidgets:setAllPoints(buttons.modulesButton.text);
-        _LibWidgets:setText(buttons.modulesButton.text, "M");
-        _LibWidgets:setPoint(buttons.modulesButton.text, "CENTER", 1, 0 );
+
+        _LibWidgets:setText(buttons.modulesButton.text,
+            "M"
+        );
+
+        _LibWidgets:setPoint(buttons.modulesButton.text,
+            "CENTER",
+            1,
+            0
+        );
 
         --buttons.modulesButton:SetScript("OnClick", function()
 
@@ -136,10 +190,14 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --end)
 
-        _LibWidgets:setFrameLevel(buttons.modulesButton, _LibWidgets:getFrameLevel(buttons.modulesButton) + 1)
+        _LibWidgets:setFrameLevel(buttons.modulesButton,
+            _LibWidgets:getFrameLevel(buttons.modulesButton) + 1
+        );
 
         --alpha
-        _LibWidgets:setAlpha(buttons.modulesButton, 0.75);
+        _LibWidgets:setAlpha(buttons.modulesButton,
+            0.75
+        );
 
     end
 

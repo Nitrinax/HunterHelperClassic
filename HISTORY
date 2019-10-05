@@ -1,3 +1,8 @@
+0.0.1-3
+- reformat function files
+- overhauled Libs\LibLocale-0.1\Functions\getCatalogStr
+- 
+
 0.0.1-2
 - changed table name from _HHC.Defaults to _HHC.Colors in file Data\Defaults\Colors.lua
 - new file Data\Defaults\Data.lua

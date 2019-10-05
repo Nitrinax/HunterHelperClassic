@@ -2,7 +2,13 @@
 if _HHC.Functions:checkForHunterClass() == false then
 
     -- show error messages if class != hunter
-    colored_print("red", _HHC.Data.Title .. ": " .. _LibLocale:GetCatalogStr(_HHC.Locale.Core, "ADDON_DISABLED_ONLY_FOR_HUNTER_CLASS", "Addon disabled because this addon is only for hunter"));
+    colored_print("red",
+        _HHC.Data.Title
+        .. ": "
+        .. _LibLocale:GetCatalogStr(_HHC.Locale.Core, 
+        "ADDON_DISABLED_ONLY_FOR_HUNTER_CLASS",
+        "Addon disabled because this addon is only for hunter")
+    );
 
     -- self disabling
     DisableAddOn(_HHC.Data.AddonName);
@@ -14,7 +20,13 @@ else
         _HHC.Options["SILENCE_ADDON"] == false then
 
         -- show loading message
-        print(colored_print( "yellow", _HHC.Data.LongVersionString, true) .. " " .. _LibLocale:GetCatalogStr(_HHC.Locale.Core, "ADDON_LOADED", "loaded"));
+        print(colored_print( "yellow",
+            _HHC.Data.LongVersionString, true)
+            .. " "
+            .. _LibLocale:GetCatalogStr(_HHC.Locale.Core,
+            "ADDON_LOADED",
+            "loaded")
+        );
 
     end
 
@@ -37,12 +49,28 @@ else
 
         if value == true then
 
-            module_loader = "_HHC.Modules.".. key .. ".Frames.Main = _HHC.Modules." .. key .. ".Functions:displayModule(_HHC.Frames.Main);";
+            module_loader = "_HHC.Modules." .. key .. ".Frames.Main = _HHC.Modules." .. key .. ".Functions:displayModule(_HHC.Frames.Main);";
 
             --RunScript(module_loader);
 
         end
 
     end
+
+    -- ### BEGIN TESTS ###
+
+    local testFrame;
+
+    --frame
+    testFrame = _LibWidgets:createFrame("Frame", 
+        _HHC.Frames["DEFAULT_FRAME_PARENT"],
+        _HHC.Frames["DEFAULT_FRAME_WIDTH"],
+        _HHC.Frames["DEFAULT_FRAME_HEIGHT"],
+        true,
+        true
+    );
+
+
+    -- ### END TESTS ###
 
 end
