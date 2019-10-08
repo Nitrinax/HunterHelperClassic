@@ -12,5 +12,5 @@ _HHC.Textures["ELEMENTS_BUTTON_PUSHED_TEXTURE"] = "Interface\\Buttons\\UI-PlusBu
 _HHC.Textures["ELEMENTS_BUTTON_HIGHLIGHT_TEXTURE"] = "Interface\\Buttons\\UI-PlusButton-Hilight.blp";
 
 _HHC.Textures["OPTIONS_BUTTON_NORMAL_TEXTURE"] = "Interface\\Buttons\\UI-OptionsButton.blp";
--- _HHC.Textures["OPTIONS_BUTTON_PUSHED_TEXTURE"] = "";
+--_HHC.Textures["OPTIONS_BUTTON_PUSHED_TEXTURE"] = "";
 _HHC.Textures["OPTIONS_BUTTON_HIGHLIGHT_TEXTURE"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight.blp";

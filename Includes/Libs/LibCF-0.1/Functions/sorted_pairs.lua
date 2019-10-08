@@ -1,5 +1,5 @@
 --source: https://stackoverflow.com/questions/15706270/sort-a-table-in-lua
-function sorted_pairs(t, order)
+function _LibCF:sorted_pairs(t, order)
 
     --collect the keys
     local keys = {};

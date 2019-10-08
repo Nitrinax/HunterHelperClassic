@@ -2,12 +2,12 @@
 ..\FrameXML\UI.xsd">
     
     <!-- libs -->
-    <Include file="Includes\Libs\Libs.xml"/>
+    <Include file="Libs\Libs.xml"/>
 
     <!-- debug function -->
-    <Include file="Includes\Debug\Debug.xml"/>
+    <Include file="Debug\Debug.xml"/>
 
     <!-- custom functions -->
-    <Include file="Includes\Custom\Custom.xml"/>
+    <!-- <Include file="Custom\Custom.xml"/> -->
 
 </Ui>

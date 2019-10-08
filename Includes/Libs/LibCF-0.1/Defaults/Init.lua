@@ -1,10 +1,10 @@
 --init tables
 
 --main table
-_LibZones = {};
+_LibCF = {};
 
 --defaults table
-_LibZonesDefaults = {};
+_LibCFDefaults = {};
 
 --data table
-_LibZonesData = {};
+_LibCFData = {};

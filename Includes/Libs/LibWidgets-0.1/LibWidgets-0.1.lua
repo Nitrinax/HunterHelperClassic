@@ -16,7 +16,7 @@ _LibWidgets = LibStub:NewLibrary(MAJOR, MINOR);
 
 if not _LibWidgets then
 
-  return	-- already loaded and no upgrade necessary
+  return	--already loaded and no upgrade necessary
 
 else
 

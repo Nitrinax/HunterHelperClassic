@@ -16,7 +16,7 @@ _LibZones = LibStub:NewLibrary(MAJOR, MINOR);
 
 if not _LibZones then
 
-  return	-- already loaded and no upgrade necessary
+  return	--already loaded and no upgrade necessary
 
 else
   

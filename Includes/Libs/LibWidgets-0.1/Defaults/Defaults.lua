@@ -1,2 +1,2 @@
--- silencing load message
+--silencing load message
 _LibWidgetsDefaults["SILENCE"] = true;

@@ -3,6 +3,7 @@
     
     <!-- libs -->
     <Script file="LibStub\LibStub.lua"/>
+    <Include file="LibCF-0.1\LibCF-0.1.xml"/>
     <Include file="LibLocale-0.1\LibLocale-0.1.xml"/>
     <Include file="LibWidgets-0.1\LibWidgets-0.1.xml"/>
     <Include file="LibZones-0.1\LibZones-0.1.xml"/>

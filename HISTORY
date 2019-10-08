@@ -1,7 +1,11 @@
 0.0.1-3
-- reformat function files
+- reformated function files
 - overhauled Libs\LibLocale-0.1\Functions\getCatalogStr
-- 
+- added code for register event PLAYER_LEVEL_UP
+- added code for handle event PLAYER_LEVEL_UP
+- added new functions getHeight, getWidth to LibWidgets-0.1
+- move custom functions to LibCF
+- overhauled code for using LibCF functions
 
 0.0.1-2
 - changed table name from _HHC.Defaults to _HHC.Colors in file Data\Defaults\Colors.lua
@@ -49,7 +53,7 @@
 - included a debug function
 - added function checkForHunterClass to restrict addon to hunters
 - added UnitExists check to function checkIfPetSummoned
-- added function colored_print to print colored messages
+- added function _LibCF:colored_print to print colored messages
 - added functions tableHasKey, tableHasValue
 
 0.0.0-21

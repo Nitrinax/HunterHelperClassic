@@ -1,4 +1,4 @@
--- return zone type name from a given zone id
+--return zone type name from a given zone id
 
 --zoneType
 --1 == Continent

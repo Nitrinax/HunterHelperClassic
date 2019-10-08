@@ -1,5 +1,5 @@
--- return zone name from a given zone id
--- if recursive true than also return type of zone, levelrange and max players for this zone
+--return zone name from a given zone id
+--if recursive true than also return type of zone, levelrange and max players for this zone
 function _LibZones:GetZoneNameByID(zoneID, recursive)
 
     --defaults

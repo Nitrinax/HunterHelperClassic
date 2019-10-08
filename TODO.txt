@@ -50,3 +50,10 @@ Arguments
 Returns
 
 This function does not return any values. 
+
+
+- Verkäufer für Pfeile, Köcher
+- Verkäufer für Kugeln, Munitionsbeutel
+- Verkäufer für Fleisch (Pet)
+- Verkäufer für Fisch (Pet)
+- Verkäufer für Obst (Pet)

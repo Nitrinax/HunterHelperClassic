@@ -1,10 +1,10 @@
 --init tables
 
--- main table
+--main table
 _LibLocale = {};
 
--- defaults table
+--defaults table
 _LibLocaleDefaults = {};
 
--- data table
+--data table
 _LibLocaleData = {};

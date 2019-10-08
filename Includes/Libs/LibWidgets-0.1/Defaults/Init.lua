@@ -1,10 +1,10 @@
 --init tables
 
--- main table
+--main table
 _LibWidgets = {...};
 
--- defaults table
+--defaults table
 _LibWidgetsDefaults = {};
 
--- data table
+--data table
 _LibWidgetsData = {};

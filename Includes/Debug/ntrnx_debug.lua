@@ -33,7 +33,7 @@ function ntrnx_debug(string)
                 local modpos = strfind(result_1, NTRNX_DEBUG_ADDON_ABBREVATION);
                 --print(modpos);                
 
-                -- fix if modpos == nil
+                --fix if modpos == nil
                 if modpos == nil then modpos = 0; end
 
                 local strfindpart = strsub(NTRNX_DEBUG_ADDON_ABBREVATION, 1, 1);
@@ -69,17 +69,17 @@ function ntrnx_debug(string)
 
         end
 
-        -- remove line breaks
+        --remove line breaks
         output = strtrim(output, NTRNX_DEBUG_LINEBREAK_STRING);
 
-        -- display debug message
+        --display debug message
         print (output);
 
     end
 
 end
 
--- find last / in a given string
+--find last / in a given string
 function ntrnx_findLastSlash(string, start)
 
     local string_len = strlen(string);

@@ -16,7 +16,7 @@ _LibLocale = LibStub:NewLibrary(MAJOR, MINOR);
 
 if not _LibLocale then
 
-  return	-- already loaded and no upgrade necessary
+  return	--already loaded and no upgrade necessary
 
 else
 

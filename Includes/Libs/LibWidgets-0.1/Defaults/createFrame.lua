@@ -1,4 +1,4 @@
--- frame
+--frame
 _LibWidgetsDefaults["CREATEFRAME_FRAMEPARENT"] = UIParent
 _LibWidgetsDefaults["CREATEFRAME_FRAMEXSIZE"] = 100;
 _LibWidgetsDefaults["CREATEFRAME_FRAMEYSIZE"] = 100;
@@ -6,7 +6,7 @@ _LibWidgetsDefaults["CREATEFRAME_POS"] = "TOPLEFT";
 _LibWidgetsDefaults["CREATEFRAME_LEFT_OFFSET"] = 80;
 _LibWidgetsDefaults["CREATEFRAME_TOP_OFFSET"] = -80;
 _LibWidgetsDefaults["CREATEFRAME_ALPHA"] = 0.75;
--- frame title
+--frame title
 _LibWidgetsDefaults["CREATEFRAME_TITLE_FRAMEXSIZE"] = 96;
 _LibWidgetsDefaults["CREATEFRAME_TITLE_FRAMEYSIZE"] = 32;
 _LibWidgetsDefaults["CREATEFRAME_TITLE_POS"] = "TOPLEFT";

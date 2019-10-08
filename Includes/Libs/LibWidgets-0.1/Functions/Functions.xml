@@ -7,8 +7,10 @@
 	<Script file="widgets\uiobject\setAlpha.lua"/>
 
     <!-- # widgets\uiobject region -->
+    <Script file="widgets\uiobject\region\getHeight.lua"/>
+    <Script file="widgets\uiobject\region\getWidth.lua"/>
     <Script file="widgets\uiobject\region\SetAllPoints.lua"/>
-    <Script file="widgets\uiobject\region\setPoint.lua"/> 
+    <Script file="widgets\uiobject\region\setPoint.lua"/>
 
     <!-- # widgets\uiobject\region\frame -->
     <Script file="widgets\uiobject\region\frame\createFrame.lua"/>

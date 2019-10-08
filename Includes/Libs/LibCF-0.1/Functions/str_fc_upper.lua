@@ -1,4 +1,4 @@
-function str_fc_upper(string)
+function _LibCF:str_fc_upper(string)
 
     --convert complete string to lower
     local loweredstring = strlower(string);

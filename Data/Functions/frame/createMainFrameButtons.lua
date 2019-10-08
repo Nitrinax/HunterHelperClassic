@@ -4,16 +4,16 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
     _HHC.Data.buttonOffset = -4;
 
-    -- close button
+    --close button
     if _HHC.Options.Buttons.Main.Close == true then
 
         buttons.closeButton = _LibWidgets:createButton(
             "closeButton",
             inheritFrame,
             "UIPanelCloseButton",
-            nil, -- _HHC.Textures["CLOSE_BUTTON_NORMAL_TEXTURE"]
-            nil, -- _HHC.Textures["CLOSE_BUTTON_PUSHED_TEXTURE"]
-            nil, -- _HHC.Textures["CLOSE_BUTTON_HIGHLIGHT_TEXTURE"]
+            nil, --_HHC.Textures["CLOSE_BUTTON_NORMAL_TEXTURE"]
+            nil, --_HHC.Textures["CLOSE_BUTTON_PUSHED_TEXTURE"]
+            nil, --_HHC.Textures["CLOSE_BUTTON_HIGHLIGHT_TEXTURE"]
             34,
             34,
             _HHC.Locale.Core["CLOSE_BUTTON_TOOLTIP"]
@@ -44,7 +44,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
     end
 
-    -- options button
+    --options button
     if _HHC.Options.Buttons.Main.Options == true then
 
         buttons.optionsButton = _LibWidgets:createButton(
@@ -67,7 +67,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --buttons.optionsButton:SetScript("OnClick", function()
 
-            --    hhwcOptionsFrame:Show();
+            --   hhwcOptionsFrame:Show();
 
         --end)
 
@@ -84,7 +84,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
     end
 
-    -- elements button
+    --elements button
     if _HHC.Options.Buttons.Main.Elements == true then
 
         buttons.elementsButton = _LibWidgets:createButton(
@@ -105,7 +105,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
             0
         );
 
-        -- button text
+        --button text
         buttons.elementsButton.text = _LibWidgets:createFontString(buttons.elementsButton,
             nil,
             nil,
@@ -126,7 +126,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --buttons.elementsButton:SetScript("OnClick", function()
 
-            --    hhwcOptionsFrame:Show();
+            --   hhwcOptionsFrame:Show();
 
         --end)
 
@@ -143,7 +143,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
     end
 
-    -- modules button
+    --modules button
     if _HHC.Options.Buttons.Main.Modules == true then
 
         buttons.modulesButton = _LibWidgets:createButton(
@@ -165,7 +165,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
             0
         );
 
-        -- button text
+        --button text
         buttons.modulesButton.text = _LibWidgets:createFontString(buttons.modulesButton,
             nil,
             nil,
@@ -186,7 +186,7 @@ function _HHC.Functions:createMainFrameButtons(inheritFrame, targetFrame)
 
         --buttons.modulesButton:SetScript("OnClick", function()
 
-            --    hhwcOptionsFrame:Show();
+            --   hhwcOptionsFrame:Show();
 
         --end)
 

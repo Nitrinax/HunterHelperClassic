@@ -1,38 +1,39 @@
 --init tables
 
--- main table
+--main table
 _HHC = {};
 
--- data table
+--data table
 _HHC.Data = {};
 
--- options table
+--options table
 _HHC.Options = {};
 
--- options table
+--options table
 _HHC.Colors = {};
 
--- fonts table
+--fonts table
 _HHC.Fonts = {};
 
--- frame table
+--frame table
 _HHC.Frames = {};
 
--- icon tables
+--icon tables
 _HHC.Icons = {};
 
 --texture tables
 _HHC.Textures = {};
 
--- locale table
+--locale table
 _HHC.Locale = {};
 
--- functions table
+--functions table
 _HHC.Functions = {};
 
--- frame events
+--frame events
 _HHC.Events = {};
 
--- modules table
+--modules table
 _HHC.Modules = {};
 _HHC.Modules.State = {};
+_HHC.Modules.Height = 0;

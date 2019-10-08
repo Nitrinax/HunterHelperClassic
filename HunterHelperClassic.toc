@@ -2,7 +2,7 @@
 
 ## Version: 0.0.1
 ## X-Revision: 3
-## X-Date: 03.10.2019
+## X-Date: 2019-10-06
 
 ## Title: HunterHelperClassic
 # Title-frFR: HunterHelperClassic
@@ -47,7 +47,7 @@
 ## SavedVariablesPerCharacter: HunterHelperClassic
 
 # includes
-embeds.xml
+Includes\Includes.xml
 
 # data
 Data\Data.xml
