@@ -4,19 +4,11 @@ function _HHC.Functions:handleEvents(frame)
 
         if event == "PLAYER_LOGIN" then
 
-            --setup player level from scratch
-            _HHC.Data.CurrentPlayerLevel = UnitLevel("player");
-            --ntrnx_debug(_LibCF:colored_print("yellow", "Playerlevel : " .. _HHC.Data.CurrentPlayerLevel, true));
+            _HHC.Functions:updatePlayerLevel();
 
             if _HHC.Functions:checkIfPetSummoned() == true then
 
-                --setup player level from scratch
-                _HHC.Data.CurrentPetLevel = UnitLevel("pet");
-                --ntrnx_debug(_LibCF:colored_print("yellow", "Petlevel : " .. _HHC.Data.CurrentPetLevel, true));
-
-            else
-
-                _HHC.Data.CurrentPetLevel = 0;
+                _HHC.Functions:updatePetLevel();
 
             end
 

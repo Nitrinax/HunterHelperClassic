@@ -17,4 +17,9 @@
   <Script file="handleEvents.lua"/>
   <!-- <Script file="checkTwiceEvents.lua"/> -->
 
+  <!-- misc -->
+  <Script file="setupTargetFont.lua"/>
+  <Script file="updatePetLevel.lua"/>
+  <Script file="updatePlayerLevel.lua"/>
+
 </Ui>

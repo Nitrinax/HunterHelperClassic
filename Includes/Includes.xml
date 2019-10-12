@@ -7,7 +7,4 @@
     <!-- debug function -->
     <Include file="Debug\Debug.xml"/>
 
-    <!-- custom functions -->
-    <!-- <Include file="Custom\Custom.xml"/> -->
-
 </Ui>

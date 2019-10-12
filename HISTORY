@@ -1,10 +1,26 @@
+0.0.1-4
+- directory Includes\Custom removed, since the functions are available through LibCF
+- added some variables to _HHC.Data for current player and pet vars
+- added checkIfPetSummoned() check to function checkPetSameLevelAsPlayer
+- added new function setupTargetFont to setup font, fontsize, fontstyle and fontcolor of a target fontstring object
+- added new function updatePetLevel
+- added new function updatePlayerLevel
+- moved code for addon loading reason from HunterHelperClassic.lua to new LibCF
+- moved functions for addon toc function from HunterHelperClassic.lua to new LibCF
+- moved function colored_print to new LibCF
+- moved function sorted_pairs to new LibCF
+- moved function str_fc_upper to new LibCF
+- moved function table_has_key to new LibCF
+- moved function table_has_value to new LibCF
+- overhauled some other code parts
+
 0.0.1-3
 - reformated function files
 - overhauled Libs\LibLocale-0.1\Functions\getCatalogStr
 - added code for register event PLAYER_LEVEL_UP
 - added code for handle event PLAYER_LEVEL_UP
 - added new functions getHeight, getWidth to LibWidgets-0.1
-- move custom functions to LibCF
+- moved custom functions to LibCF
 - overhauled code for using LibCF functions
 
 0.0.1-2

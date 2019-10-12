@@ -13,4 +13,10 @@ _HHC.Data.LongVersionString = _LibCF:getAddonTocLongVersionString(_HHC.Data.Addo
 --default data
 _HHC.Data.MaxLevel = 60;
 _HHC.Data.CurrentPlayerLevel = 1;
-_HHC.Data.CurrentPetLevel = 0;
+_HHC.Data.CurrentPetLevel = 1;
+_HHC.Data.CurrentPetHappinness = 1;
+_HHC.Data.CurrentPetDamagePercentages = 75;
+_HHC.Data.CurrentPetLoyalty = 1;
+_HHC.Data.CurrentPetLoyaltyRate = 1;
+_HHC.Data.CurrentPetTotalPoints = 0;
+_HHC.Data.CurrentPetPointsSpend = 0;

@@ -2,17 +2,15 @@ function _HHC.Functions:checkUnitMaxLevel(unit)
 
     local unitLevel = 1;
 
-    local maxLevel = _HHC.Data.MaxAddonLevel;
+    local maxLevel = _HHC.Data.MaxLevel;
 
     if unit == "player" then
 
         unitLevel = _HHC.Data.RealPlayerLevel;
 
-    end
+    elseif unit == "pet" then
 
-    if unit == "pet" then
-
-        unitLevel = UnitLevel("pet");
+        unitLevel = _HHC.Data.CurrentPetLevel;
 
     end
 
