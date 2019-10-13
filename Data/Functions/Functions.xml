@@ -4,6 +4,7 @@
   <!-- main functions -->
   <Script file="checkForHunterClass.lua"/>
   <Script file="checkIfPetSummoned.lua"/>
+  <Script file="checkIfPlayerInVehicle.lua"/>
   <Script file="checkPetSameLevelAsPlayer.lua"/>
   <Script file="checkUnitMaxLevel.lua"/>
 

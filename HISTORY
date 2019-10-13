@@ -1,3 +1,6 @@
+0.0.1-5
+- added function for checking if player in taxi/flight/vehicle
+
 0.0.1-4
 - directory Includes\Custom removed, since the functions are available through LibCF
 - added some variables to _HHC.Data for current player and pet vars

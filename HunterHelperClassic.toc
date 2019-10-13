@@ -1,8 +1,8 @@
 ## Interface: 11302
 
 ## Version: 0.0.1
-## X-Revision: 4
-## X-Date: 2019-10-12
+## X-Revision: 5
+## X-Date: 2019-10-13
 
 ## Title: HunterHelperClassic
 # Title-frFR: HunterHelperClassic

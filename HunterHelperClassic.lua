@@ -41,7 +41,7 @@ else
     _HHC.Frames.Main.Title = _HHC.Functions:createMainFrameTitle(_HHC.Frames.Main);
 
     --create main frame buttons
-    _HHC.Frames.Main.Buttons = _HHC.Functions:createMainFrameButtons(_HHC.Frames.Main.Title, _HHC.Frames.Main);    
+    _HHC.Frames.Main.Buttons = _HHC.Functions:createMainFrameButtons(_HHC.Frames.Main.Title, _HHC.Frames.Main);
 
     _HHC.Modules.Height = _HHC.Frames["DEFAULT_TITLE_FRAME_HEIGHT"] - _HHC.Frames["DEFAULT_MODULE_FRAME_SPACE"] - 2;
     --ntrnx_debug(_LibCF:colored_print("yellow", _HHC.Modules.Height, true));
@@ -72,5 +72,6 @@ else
     end
 
     _HHC.Frames.Main:SetHeight(_HHC.Modules.Height + _HHC.Frames["DEFAULT_ELEMENT_FRAME_SPACE"]);
+    --ntrnx_debug(_LibCF:colored_print("yellow", _HHC.Frames.Main:GetHeight(), true));
 
 end
