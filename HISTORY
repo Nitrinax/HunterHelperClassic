@@ -1,3 +1,6 @@
+0.0.1-6
+- reworked colored_print for better and more colors
+
 0.0.1-5
 - added function for checking if player in taxi/flight/vehicle
 
