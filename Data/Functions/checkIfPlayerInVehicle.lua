@@ -4,7 +4,17 @@ function _HHC.Functions:checkIfPlayerInVehicle()
 
     local onTaxi = UnitOnTaxi("player");
 
-    if onTaxi == true then ifPlayerInVehicle = 1; end
+    --ntrnx_debug(_LibCF:colored_print("orange", "onTaxi " .. tostring(onTaxi), true));
+
+    if onTaxi == true then
+
+        ifPlayerInVehicle = 1;
+
+    elseif onTaxi == false then
+
+        ifPlayerInVehicle = 0;
+
+    end
 
     -- code for future api extension
 

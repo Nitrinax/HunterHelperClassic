@@ -20,3 +20,4 @@ _HHC.Data.CurrentPetLoyalty = 1;
 _HHC.Data.CurrentPetLoyaltyRate = 1;
 _HHC.Data.CurrentPetTotalPoints = 0;
 _HHC.Data.CurrentPetPointsSpend = 0;
+_HHC.Data.PlayerControlLost = 0;

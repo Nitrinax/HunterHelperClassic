@@ -27,6 +27,22 @@ function _HHC.Functions:handleEvents(frame)
 
         end
 
+        if event == "PLAYER_CONTROL_LOST" then
+
+            --ntrnx_debug(_LibCF:colored_print("orange", event, true));
+
+            _HHC.Data.PlayerControlLost = 1;
+
+        end
+
+        if event == "PLAYER_CONTROL_GAINED" then
+
+            --ntrnx_debug(_LibCF:colored_print("orange", event, true));
+
+            _HHC.Data.PlayerControlLost = 0;
+
+        end
+
     end);
 
 end
