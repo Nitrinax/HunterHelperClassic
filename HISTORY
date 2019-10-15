@@ -1,6 +1,5 @@
 0.0.1-7
-- added events PLAYER_CONTROL_LOST and PLAYER_CONTROL_GAINED to check if a player already in a taxi or not
-- added var _HHC.Data.PlayerControlLost for handle if player in taxi
+- added 4 new functions to LibWidgets
 
 0.0.1-6
 - reworked colored_print for better and more colors

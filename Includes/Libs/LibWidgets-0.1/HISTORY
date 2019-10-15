@@ -1,0 +1,7 @@
+0.1-13
+- added new functions
+    statusbar
+        - setMinMaxValues
+        - setStatusBarColor
+        - setStatusBarTexture
+        - setValue

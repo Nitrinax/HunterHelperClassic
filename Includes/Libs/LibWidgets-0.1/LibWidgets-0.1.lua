@@ -1,6 +1,6 @@
 --[[
 Name: LibWidgets-0.1
-Revision: $Revision: 8$
+Revision: $Revision: 13$
 Author: Nitrinax
 Website: https://github.com/Nitrinax/LibWidgets
 Description: provide simplifyied widget functions

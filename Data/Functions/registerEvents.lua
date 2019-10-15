@@ -21,10 +21,4 @@ function _HHC.Functions:registerEvents(frame)
     --player level up for real player level
     frame:RegisterEvent("PLAYER_LEVEL_UP");
 
-    --player lost control
-    frame:RegisterEvent("PLAYER_CONTROL_LOST");
-
-    --player gain control
-    frame:RegisterEvent("PLAYER_CONTROL_GAINED");
-
 end

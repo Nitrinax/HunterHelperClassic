@@ -34,6 +34,10 @@
 
     <!-- # widgets region frame statusbar -->
     <Script file="widgets\uiobject\region\frame\statusbar\createStatusBar.lua"/>
+    <Script file="widgets\uiobject\region\frame\statusbar\setMinMaxValues.lua"/>
+    <Script file="widgets\uiobject\region\frame\statusbar\setStatusBarColor.lua"/>
+    <Script file="widgets\uiobject\region\frame\statusbar\setStatusBarTexture.lua"/>
+    <Script file="widgets\uiobject\region\frame\statusbar\setValue.lua"/>
 
     <!-- # widgets region layeredregion fontstring -->
     <Script file="widgets\uiobject\region\layeredregion\fontstring\createFontString.lua"/>
